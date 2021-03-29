@@ -242,7 +242,7 @@ PODS:
     - React-cxxreact (= 0.62.2)
     - React-jsi (= 0.62.2)
     - ReactCommon/callinvoker (= 0.62.2)
-  - RNPdftron (2.0.3-beta.51):
+  - RNPdftron (2.0.3-beta.59):
     - PDFNet
     - React-Core
   - Yoga (1.14.0)
@@ -366,7 +366,7 @@ SPEC CHECKSUMS:
   React-RCTText: fae545b10cfdb3d247c36c56f61a94cfd6dba41d
   React-RCTVibration: 4356114dbcba4ce66991096e51a66e61eda51256
   ReactCommon: ed4e11d27609d571e7eee8b65548efc191116eb3
-  RNPdftron: 0825207b6fc8f0dc6d25e451885493f6a2d1ec5b
+  RNPdftron: 01880cafe40037c92f6ecea4bc8141e38c7832aa
   Yoga: 3ebccbdd559724312790e7742142d062476b698e
 
 PODFILE CHECKSUM: 394e283f4f9d96e023e62c4e0fefcc4bf0074de2
