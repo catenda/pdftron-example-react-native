@@ -1,13 +1,26 @@
 import React from 'react';
 
-import {DocumentView, RNPdftron} from 'react-native-pdftron';
+import {Config, DocumentView, RNPdftron} from 'react-native-pdftron';
 
 const App = () => {
   RNPdftron.initialize('KEY_GOES_HERE');
 
   const path = 'https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf';
 
-  return <DocumentView followSystemDarkMode={false} document={path} />;
+  return (
+    <DocumentView
+      followSystemDarkMode={false}
+      document={path}
+      padStatusBar={false}
+      hideDefaultAnnotationToolbars={[
+        Config.DefaultToolbars.FillAndSign,
+        Config.DefaultToolbars.PrepareForm,
+        Config.DefaultToolbars.Redaction,
+        Config.DefaultToolbars.View,
+      ]}
+      hideTopAppNavBar={true}
+    />
+  );
 };
 
 export default App;
