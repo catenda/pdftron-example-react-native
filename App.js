@@ -9,16 +9,11 @@ const App = () => {
 
   return (
     <DocumentView
-      followSystemDarkMode={false}
+      bottomToolbarEnabled={false}
       document={path}
-      padStatusBar={false}
-      hideDefaultAnnotationToolbars={[
-        Config.DefaultToolbars.FillAndSign,
-        Config.DefaultToolbars.PrepareForm,
-        Config.DefaultToolbars.Redaction,
-        Config.DefaultToolbars.View,
-      ]}
-      hideTopAppNavBar={true}
+      followSystemDarkMode={false}
+      hideToolbarsOnTap={false}
+      hideTopAppNavBar={true} // Not working when bottomToolbarEnabled={false} hides all of top bar
     />
   );
 };
