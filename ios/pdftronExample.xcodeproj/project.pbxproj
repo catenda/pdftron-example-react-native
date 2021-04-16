@@ -51,22 +51,22 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = pdftronExample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = pdftronExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = pdftronExample/main.m; sourceTree = "<group>"; };
-		1C8660DFA4CD612ABFEB9D79 /* Pods-pdftronExample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-pdftronExample-tvOS/Pods-pdftronExample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		1D07AD5A9BFC31B798C68797 /* Pods-pdftronExample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample-tvOS.release.xcconfig"; path = "Target Support Files/Pods-pdftronExample-tvOS/Pods-pdftronExample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		21AF8906F8CF68B346BD1FAB /* libPods-pdftronExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pdftronExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CC619BCB9E3FC1175A1243A /* libPods-pdftronExample-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pdftronExample-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* pdftronExample-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pdftronExample-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* pdftronExample-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pdftronExample-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A2D117F6D43104001FCFB29 /* Pods-pdftronExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample.release.xcconfig"; path = "Target Support Files/Pods-pdftronExample/Pods-pdftronExample.release.xcconfig"; sourceTree = "<group>"; };
+		2E1743DE8A9448017E80154F /* Pods-pdftronExample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample-tvOS.release.xcconfig"; path = "Target Support Files/Pods-pdftronExample-tvOS/Pods-pdftronExample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		4D5C02C273BF4671A7042E91 /* Pods-pdftronExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample.debug.xcconfig"; path = "Target Support Files/Pods-pdftronExample/Pods-pdftronExample.debug.xcconfig"; sourceTree = "<group>"; };
+		5B077BAEB50E9DBCEE22E71E /* Pods-pdftronExample-pdftronExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample-pdftronExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-pdftronExample-pdftronExampleTests/Pods-pdftronExample-pdftronExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7FF33B8AB6AC12972D8EFABA /* libPods-pdftronExample-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pdftronExample-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EEDCF92B8C60C2EA437330 /* libPods-pdftronExample-pdftronExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pdftronExample-pdftronExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCB5F001391B3DF2DA676EBD /* Pods-pdftronExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample.debug.xcconfig"; path = "Target Support Files/Pods-pdftronExample/Pods-pdftronExample.debug.xcconfig"; sourceTree = "<group>"; };
-		D2013D2720C4E9B2BCB62322 /* Pods-pdftronExample-pdftronExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample-pdftronExampleTests.release.xcconfig"; path = "Target Support Files/Pods-pdftronExample-pdftronExampleTests/Pods-pdftronExample-pdftronExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		DA3373DE9126FD3AD5D04175 /* Pods-pdftronExample-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-pdftronExample-tvOSTests/Pods-pdftronExample-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		DD7BCB8824E06DA8A6FD4047 /* Pods-pdftronExample-pdftronExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample-pdftronExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-pdftronExample-pdftronExampleTests/Pods-pdftronExample-pdftronExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A3292CC35902F69631B14E14 /* Pods-pdftronExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample.release.xcconfig"; path = "Target Support Files/Pods-pdftronExample/Pods-pdftronExample.release.xcconfig"; sourceTree = "<group>"; };
+		CA9FC6F6AD1681A9DBA1ACBD /* Pods-pdftronExample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-pdftronExample-tvOS/Pods-pdftronExample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D9319AC3835C10340515CC0F /* Pods-pdftronExample-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-pdftronExample-tvOSTests/Pods-pdftronExample-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E39D1F668B38D2FAB85EBEFB /* Pods-pdftronExample-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-pdftronExample-tvOSTests/Pods-pdftronExample-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		FF0B2CFB13B900D73B037B2C /* Pods-pdftronExample-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-pdftronExample-tvOSTests/Pods-pdftronExample-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F00F36A2381945537CADDB54 /* Pods-pdftronExample-pdftronExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample-pdftronExampleTests.release.xcconfig"; path = "Target Support Files/Pods-pdftronExample-pdftronExampleTests/Pods-pdftronExample-pdftronExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,17 +149,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4827580A97B608B6477F41DC /* Pods */ = {
+		8082433E3A146197F12AFBAF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CCB5F001391B3DF2DA676EBD /* Pods-pdftronExample.debug.xcconfig */,
-				4A2D117F6D43104001FCFB29 /* Pods-pdftronExample.release.xcconfig */,
-				DD7BCB8824E06DA8A6FD4047 /* Pods-pdftronExample-pdftronExampleTests.debug.xcconfig */,
-				D2013D2720C4E9B2BCB62322 /* Pods-pdftronExample-pdftronExampleTests.release.xcconfig */,
-				1C8660DFA4CD612ABFEB9D79 /* Pods-pdftronExample-tvOS.debug.xcconfig */,
-				1D07AD5A9BFC31B798C68797 /* Pods-pdftronExample-tvOS.release.xcconfig */,
-				FF0B2CFB13B900D73B037B2C /* Pods-pdftronExample-tvOSTests.debug.xcconfig */,
-				DA3373DE9126FD3AD5D04175 /* Pods-pdftronExample-tvOSTests.release.xcconfig */,
+				4D5C02C273BF4671A7042E91 /* Pods-pdftronExample.debug.xcconfig */,
+				A3292CC35902F69631B14E14 /* Pods-pdftronExample.release.xcconfig */,
+				5B077BAEB50E9DBCEE22E71E /* Pods-pdftronExample-pdftronExampleTests.debug.xcconfig */,
+				F00F36A2381945537CADDB54 /* Pods-pdftronExample-pdftronExampleTests.release.xcconfig */,
+				CA9FC6F6AD1681A9DBA1ACBD /* Pods-pdftronExample-tvOS.debug.xcconfig */,
+				2E1743DE8A9448017E80154F /* Pods-pdftronExample-tvOS.release.xcconfig */,
+				D9319AC3835C10340515CC0F /* Pods-pdftronExample-tvOSTests.debug.xcconfig */,
+				E39D1F668B38D2FAB85EBEFB /* Pods-pdftronExample-tvOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -180,7 +180,7 @@
 				00E356EF1AD99517003FC87E /* pdftronExampleTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				4827580A97B608B6477F41DC /* Pods */,
+				8082433E3A146197F12AFBAF /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -662,7 +662,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD7BCB8824E06DA8A6FD4047 /* Pods-pdftronExample-pdftronExampleTests.debug.xcconfig */;
+			baseConfigurationReference = 5B077BAEB50E9DBCEE22E71E /* Pods-pdftronExample-pdftronExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -685,7 +685,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2013D2720C4E9B2BCB62322 /* Pods-pdftronExample-pdftronExampleTests.release.xcconfig */;
+			baseConfigurationReference = F00F36A2381945537CADDB54 /* Pods-pdftronExample-pdftronExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -705,7 +705,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCB5F001391B3DF2DA676EBD /* Pods-pdftronExample.debug.xcconfig */;
+			baseConfigurationReference = 4D5C02C273BF4671A7042E91 /* Pods-pdftronExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -732,7 +732,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A2D117F6D43104001FCFB29 /* Pods-pdftronExample.release.xcconfig */;
+			baseConfigurationReference = A3292CC35902F69631B14E14 /* Pods-pdftronExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -753,7 +753,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C8660DFA4CD612ABFEB9D79 /* Pods-pdftronExample-tvOS.debug.xcconfig */;
+			baseConfigurationReference = CA9FC6F6AD1681A9DBA1ACBD /* Pods-pdftronExample-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -781,7 +781,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D07AD5A9BFC31B798C68797 /* Pods-pdftronExample-tvOS.release.xcconfig */;
+			baseConfigurationReference = 2E1743DE8A9448017E80154F /* Pods-pdftronExample-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -809,7 +809,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF0B2CFB13B900D73B037B2C /* Pods-pdftronExample-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = D9319AC3835C10340515CC0F /* Pods-pdftronExample-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -836,7 +836,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA3373DE9126FD3AD5D04175 /* Pods-pdftronExample-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = E39D1F668B38D2FAB85EBEFB /* Pods-pdftronExample-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;

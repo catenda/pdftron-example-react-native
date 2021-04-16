@@ -7,15 +7,7 @@ const App = () => {
 
   const path = 'https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf';
 
-  return (
-    <DocumentView
-      bottomToolbarEnabled={false}
-      document={path}
-      followSystemDarkMode={false}
-      hideToolbarsOnTap={false}
-      hideTopAppNavBar={true} // Not working when bottomToolbarEnabled={false} hides all of top bar
-    />
-  );
+  return <DocumentView document={path} followSystemDarkMode={false} />;
 };
 
 export default App;
