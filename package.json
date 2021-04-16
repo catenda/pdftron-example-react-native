@@ -21,7 +21,7 @@
     "react-native-pdftron": "github:PDFTron/pdftron-react-native",
     "react-native-reanimated": "^2.1.0",
     "react-native-safe-area-context": "^3.2.0",
-    "react-native-screens": "^3.1.1"
+    "react-native-screens": "^2.18.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
