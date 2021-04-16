@@ -7,7 +7,15 @@ const App = () => {
 
   const path = 'https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf';
 
-  return <DocumentView document={path} followSystemDarkMode={false} />;
+  return (
+    <DocumentView
+      document={path}
+      disabledElements={[Config.Buttons.reflowButton]}
+      followSystemDarkMode={false}
+      hideViewModeItems={[Config.ViewModePickerItem.Crop]}
+      bottomToolbar={[Config.Buttons.viewControlsButton]}
+    />
+  );
 };
 
 export default App;
