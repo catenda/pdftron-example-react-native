@@ -161,7 +161,6 @@
 				D9319AC3835C10340515CC0F /* Pods-pdftronExample-tvOSTests.debug.xcconfig */,
 				E39D1F668B38D2FAB85EBEFB /* Pods-pdftronExample-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

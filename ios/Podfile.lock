@@ -19,7 +19,7 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - PDFNet (8.1.2.76990)
+  - PDFNet (9.0.0.77669)
   - RCTRequired (0.62.2)
   - RCTTypeSafety (0.62.2):
     - FBLazyVector (= 0.62.2)
@@ -242,7 +242,7 @@ PODS:
     - React-cxxreact (= 0.62.2)
     - React-jsi (= 0.62.2)
     - ReactCommon/callinvoker (= 0.62.2)
-  - RNPdftron (2.0.3-beta.83):
+  - RNPdftron (2.0.3-beta.92):
     - PDFNet
     - React-Core
   - Yoga (1.14.0)
@@ -346,7 +346,7 @@ SPEC CHECKSUMS:
   FBReactNativeSpec: 5465d51ccfeecb7faa12f9ae0024f2044ce4044e
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
-  PDFNet: 42280e3d039b3739785c2817c54038a4c5c535e5
+  PDFNet: aebe1a4277a68a656c103d05d4d7d7a2a3e1003a
   RCTRequired: cec6a34b3ac8a9915c37e7e4ad3aa74726ce4035
   RCTTypeSafety: 93006131180074cffa227a1075802c89a49dd4ce
   React: 29a8b1a02bd764fb7644ef04019270849b9a7ac3
@@ -366,7 +366,7 @@ SPEC CHECKSUMS:
   React-RCTText: fae545b10cfdb3d247c36c56f61a94cfd6dba41d
   React-RCTVibration: 4356114dbcba4ce66991096e51a66e61eda51256
   ReactCommon: ed4e11d27609d571e7eee8b65548efc191116eb3
-  RNPdftron: 6688b95b01f7e6d1333eebb5451aff034c23c404
+  RNPdftron: 8d34d9e25284f02f8398edd7b357f30c0ec5d4c7
   Yoga: 3ebccbdd559724312790e7742142d062476b698e
 
 PODFILE CHECKSUM: 394e283f4f9d96e023e62c4e0fefcc4bf0074de2

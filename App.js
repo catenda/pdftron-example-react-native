@@ -10,10 +10,9 @@ const App = () => {
   return (
     <DocumentView
       document={path}
-      disabledElements={[Config.Buttons.reflowButton]}
       followSystemDarkMode={false}
-      hideViewModeItems={[Config.ViewModePickerItem.Crop]}
-      bottomToolbar={[Config.Buttons.viewControlsButton]}
+      hideTopToolbars={true} // Setting to true causes memory access exception
+      hideTopAppNavBar={true} // Setting to true causes memory access exception
     />
   );
 };
