@@ -5647,6 +5647,11 @@ pn@^1.1.0:
   resolved "https://registry.yarnpkg.com/pn/-/pn-1.1.0.tgz#e2f4cef0e219f463c179ab37463e4e1ecdccbafb"
   integrity sha512-2qHaIQr2VLRFoxe2nASzsV6ef4yOOH+Fi9FBOVH6cqeSgUnoyySPZkxzLuzd+RYOQTRpROA0ztTMqxROKSb/nA==
 
+pod-install@^0.1.21:
+  version "0.1.21"
+  resolved "https://registry.yarnpkg.com/pod-install/-/pod-install-0.1.21.tgz#a731d172f691bb875f7a0e09dc28b3701947645c"
+  integrity sha512-m3wwcRKY5shcotdCae2jl3ICdZrZtCX7FdqGaUpquvmmgZ+3w0PUL7vVD/bsj1kbCw25qCqrtbn0ekyn9RABfQ==
+
 posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
@@ -5778,8 +5783,8 @@ react-is@^17.0.1:
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
 "react-native-pdftron@github:PDFTron/pdftron-react-native":
-  version "2.0.3-beta.92"
-  resolved "https://codeload.github.com/PDFTron/pdftron-react-native/tar.gz/d34a7eec6c5f55e4773cd610a49450dac02e2a21"
+  version "2.0.3-beta.94"
+  resolved "https://codeload.github.com/PDFTron/pdftron-react-native/tar.gz/8d7fe3222177b671587d373042f55db4bf6aa795"
 
 react-native@0.62.2:
   version "0.62.2"

@@ -8,7 +8,8 @@
     "start": "react-native start",
     "clear": "watchman watch-del-all && rm -rf $TMPDIR/react-* && rm -rf node_modules/ && rm -rf ios/Pods",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "postinstall": "pod-install"
   },
   "dependencies": {
     "react": "16.11.0",
@@ -26,6 +27,7 @@
     "eslint": "^6.5.1",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.58.0",
+    "pod-install": "^0.1.21",
     "react-test-renderer": "16.11.0"
   },
   "jest": {
