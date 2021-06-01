@@ -7,7 +7,32 @@ const App = () => {
 
   const path = 'https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf';
 
-  return <DocumentView document={path} />;
+  const toolbar = {
+    [Config.CustomToolbarKey.Id]: 'toolbar',
+    [Config.CustomToolbarKey.Name]: 'toolbar',
+    [Config.CustomToolbarKey.Items]: [
+      Config.Tools.annotationEraserTool,
+      Config.Tools.annotationCreateFreeHand,
+      Config.Tools.annotationCreateFreeText,
+      Config.Tools.annotationCreateLine,
+      Config.Tools.annotationCreateArrow,
+    ],
+  };
+
+  return (
+    <DocumentView
+      annotationToolbars={[toolbar]}
+      bottomToolbarEnabled={false}
+      document={path}
+      documentSliderEnabled={false}
+      hideToolbarsOnTap={false}
+      hideTopAppNavBar={true}
+      longPressMenuEnabled={false}
+      pageIndicatorEnabled={false}
+      showLeadingNavButton={false}
+      topAppNavBarRightBar={[]}
+    />
+  );
 };
 
 export default App;
