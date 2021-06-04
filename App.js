@@ -6,7 +6,7 @@ const App = () => {
   RNPdftron.initialize('KEY_GOES_HERE');
 
   const path =
-    'https://raw.githubusercontent.com/catenda/pdftron-example-react-native/main/files/image.jpg';
+    'https://github.com/catenda/pdftron-example-react-native/blob/xod/files/test.xod?raw=true';
 
   const toolbar = {
     [Config.CustomToolbarKey.Id]: 'toolbar',
