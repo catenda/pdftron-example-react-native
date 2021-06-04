@@ -7,14 +7,7 @@ const App = () => {
 
   const path = 'https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf';
 
-  return (
-    <DocumentView
-      document={path}
-      followSystemDarkMode={false}
-      hideTopToolbars={true} // Setting to true causes memory access exception
-      hideTopAppNavBar={true} // Setting to true causes memory access exception
-    />
-  );
+  return <DocumentView document={path} />;
 };
 
 export default App;
