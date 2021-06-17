@@ -11,17 +11,22 @@ const App = () => {
     [Config.CustomToolbarKey.Id]: 'toolbar',
     [Config.CustomToolbarKey.Name]: 'toolbar',
     [Config.CustomToolbarKey.Items]: [
-      Config.Tools.annotationEraserTool,
       Config.Tools.annotationCreateFreeHand,
+      Config.Tools.annotationCreateArrow,
       Config.Tools.annotationCreateFreeText,
       Config.Tools.annotationCreateLine,
-      Config.Tools.annotationCreateArrow,
+      Config.Tools.annotationEraserTool,
     ],
   };
 
   return (
     <DocumentView
       annotationToolbars={[toolbar]}
+      annotationMenuItems={[
+        Config.AnnotationMenu.style,
+        Config.AnnotationMenu.delete,
+        Config.AnnotationMenu.editText,
+      ]}
       bottomToolbarEnabled={false}
       document={path}
       documentSliderEnabled={false}
