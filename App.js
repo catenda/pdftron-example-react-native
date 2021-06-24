@@ -21,12 +21,14 @@ const App = () => {
 
   return (
     <DocumentView
+      annotationListEditingEnabled={false}
       annotationToolbars={[toolbar]}
       annotationMenuItems={[
         Config.AnnotationMenu.style,
         Config.AnnotationMenu.delete,
         Config.AnnotationMenu.editText,
       ]}
+      followSystemDarkMode={false}
       bottomToolbarEnabled={false}
       document={path}
       documentSliderEnabled={false}
