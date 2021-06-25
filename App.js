@@ -5,17 +5,16 @@ import {Config, DocumentView, RNPdftron} from 'react-native-pdftron';
 const App = () => {
   RNPdftron.initialize('KEY_GOES_HERE');
 
-  const path = 'https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf';
+  const path =
+    'https://pdftron.s3.amazonaws.com/custom/websitefiles/android/blog/signing/Screenshot_1622044031.png';
 
   const toolbar = {
     [Config.CustomToolbarKey.Id]: 'toolbar',
     [Config.CustomToolbarKey.Name]: 'toolbar',
     [Config.CustomToolbarKey.Items]: [
-      Config.Tools.annotationCreateFreeHand,
-      Config.Tools.annotationCreateArrow,
-      Config.Tools.annotationCreateFreeText,
-      Config.Tools.annotationCreateLine,
-      Config.Tools.annotationEraserTool,
+      Config.Tools.annotationCreateRectangle,
+      Config.Buttons.undo,
+      Config.Buttons.redo,
     ],
   };
 
