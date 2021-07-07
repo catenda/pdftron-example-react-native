@@ -5783,8 +5783,8 @@ react-is@^17.0.1:
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
 "react-native-pdftron@github:PDFTron/pdftron-react-native":
-  version "2.0.3-beta.121"
-  resolved "https://codeload.github.com/PDFTron/pdftron-react-native/tar.gz/d21398c746ea74436bfc8913dcfe008832419517"
+  version "2.0.3-beta.126"
+  resolved "https://codeload.github.com/PDFTron/pdftron-react-native/tar.gz/1561b793d72d7757765927d972a00b5127bcbd21"
 
 react-native@0.62.3:
   version "0.62.3"
