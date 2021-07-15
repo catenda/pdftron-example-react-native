@@ -28,11 +28,16 @@ const App = () => {
         Config.AnnotationMenu.delete,
         Config.AnnotationMenu.editText,
       ]}
+      bottomToolbar={[
+        Config.Buttons.viewControlsButton,
+        Config.Buttons.thumbnailsButton,
+        Config.Buttons.searchButton,
+      ]}
       disabledElements={[Config.Buttons.editMenuButton]}
-      followSystemDarkMode={false}
-      bottomToolbarEnabled={false}
       document={path}
       documentSliderEnabled={false}
+      followSystemDarkMode={false}
+      hideViewModeItems={[Config.ViewModePickerItem.Crop]}
       hideToolbarsOnTap={false}
       hideTopAppNavBar={true}
       longPressMenuEnabled={false}
