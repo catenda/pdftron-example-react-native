@@ -37,9 +37,10 @@ const App = () => {
       document={path}
       documentSliderEnabled={false}
       followSystemDarkMode={false}
-      hideViewModeItems={[Config.ViewModePickerItem.Crop]}
+      hideScrollbars={true}
       hideToolbarsOnTap={false}
       hideTopAppNavBar={true}
+      hideViewModeItems={[Config.ViewModePickerItem.Crop]}
       longPressMenuEnabled={false}
       pageIndicatorEnabled={false}
       showLeadingNavButton={false}
