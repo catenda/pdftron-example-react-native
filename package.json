@@ -1,5 +1,5 @@
 {
-  "name": "pdftronExample",
+  "name": "pdftron-example",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,7 +7,6 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "clear": "watchman watch-del-all && rm -rf $TMPDIR/react-* && rm -rf node_modules/ && rm -rf ios/Pods",
-    "test": "jest",
     "lint": "eslint .",
     "postinstall": "pod-install"
   },
@@ -17,20 +16,14 @@
     "react-native-pdftron": "github:PDFTron/pdftron-react-native"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/runtime": "^7.6.2",
-    "@react-native-community/cli": "^5.0.1-alpha.2",
-    "@react-native-community/cli-platform-android": "^4.13.0",
-    "@react-native-community/cli-platform-ios": "^5.0.1-alpha.2",
-    "@react-native-community/eslint-config": "^0.0.5",
-    "babel-jest": "^24.9.0",
-    "eslint": "^6.5.1",
-    "jest": "^24.9.0",
-    "metro-react-native-babel-preset": "^0.58.0",
-    "pod-install": "^0.1.21",
-    "react-test-renderer": "16.11.0"
-  },
-  "jest": {
-    "preset": "react-native"
+    "@babel/core": "7.13.10",
+    "@babel/runtime": "7.13.10",
+    "@react-native-community/cli": "5.0.1",
+    "@react-native-community/cli-platform-android": "4.13.0",
+    "@react-native-community/cli-platform-ios": "5.0.1",
+    "@react-native-community/eslint-config": "0.0.5",
+    "eslint": "6.8.0",
+    "metro-react-native-babel-preset": "0.64.0",
+    "pod-install": "0.1.24"
   }
 }
