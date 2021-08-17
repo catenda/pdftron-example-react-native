@@ -12,10 +12,15 @@ const App = () => {
     [Config.CustomToolbarKey.Id]: 'toolbar',
     [Config.CustomToolbarKey.Name]: 'toolbar',
     [Config.CustomToolbarKey.Items]: [
+      Config.Tools.annotationCreateFreeHand,
+      Config.Tools.annotationCreateArrow,
       Config.Tools.annotationCreateRectangle,
+      Config.Tools.annotationCreateEllipse,
+      Config.Tools.annotationCreateLine,
+      Config.Tools.annotationCreateFreeText,
+      Config.Tools.annotationCreatePolyline,
+      Config.Tools.annotationCreateStamp,
       Config.Tools.annotationEraserTool,
-      Config.Buttons.undo,
-      Config.Buttons.redo,
     ],
   };
 
