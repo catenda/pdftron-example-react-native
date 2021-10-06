@@ -11,6 +11,7 @@ const App = () => {
   const toolbar = {
     [Config.CustomToolbarKey.Id]: 'toolbar',
     [Config.CustomToolbarKey.Name]: 'toolbar',
+    [Config.CustomToolbarKey.Icon]: Config.ToolbarIcons.Draw,
     [Config.CustomToolbarKey.Items]: [
       Config.Tools.annotationCreateFreeHand,
       Config.Tools.annotationCreateArrow,
