@@ -331,7 +331,7 @@ PODS:
     - React-cxxreact (= 0.64.2)
     - React-jsi (= 0.64.2)
     - React-perflogger (= 0.64.2)
-  - RNPdftron (2.0.3-beta.169):
+  - RNPdftron (3.0.2-beta.3):
     - PDFNet
     - React-Core
   - Yoga (1.14.0)
@@ -512,10 +512,10 @@ SPEC CHECKSUMS:
   React-RCTVibration: 24600e3b1aaa77126989bc58b6747509a1ba14f3
   React-runtimeexecutor: a9904c6d0218fb9f8b19d6dd88607225927668f9
   ReactCommon: 149906e01aa51142707a10665185db879898e966
-  RNPdftron: a39fdab93ee1ee4ecfe2ef0324407079743b81b4
+  RNPdftron: c2ac554e770c36a8fa83d27e72829d3a57975c45
   Yoga: 575c581c63e0d35c9a83f4b46d01d63abc1100ac
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 42e3177215c08a6cff90fd1162e21defcecacad0
+PODFILE CHECKSUM: 8b771aed3b58b5257e8f28478a505c04dc4b3ed9
 
 COCOAPODS: 1.10.2
