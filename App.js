@@ -39,6 +39,7 @@ const App = () => {
         Config.Buttons.thumbnailsButton,
         Config.Buttons.searchButton,
       ]}
+      defaultEraserType={Config.EraserType.hybrideEraser}
       disabledElements={[Config.Buttons.editMenuButton]}
       document={path}
       documentSliderEnabled={false}

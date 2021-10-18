@@ -73,7 +73,7 @@ PODS:
   - glog (0.3.5)
   - libevent (2.1.12)
   - OpenSSL-Universal (1.1.180)
-  - PDFNet (9.0.2.77879)
+  - PDFNet (9.1.0.78529)
   - RCT-Folly (2020.01.13.00):
     - boost-for-react-native
     - DoubleConversion
@@ -331,7 +331,7 @@ PODS:
     - React-cxxreact (= 0.64.2)
     - React-jsi (= 0.64.2)
     - React-perflogger (= 0.64.2)
-  - RNPdftron (3.0.2-beta.3):
+  - RNPdftron (3.0.2-beta.5):
     - PDFNet
     - React-Core
   - Yoga (1.14.0)
@@ -488,7 +488,7 @@ SPEC CHECKSUMS:
   glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: 1aa4f6a6ee7256b83db99ec1ccdaa80d10f9af9b
-  PDFNet: 97d80cda2ee1763fa69a1ccad1f1d11d4ac2ea09
+  PDFNet: 710c7bd535a127bd3c9b3a83cbefe62725e76c2d
   RCT-Folly: ec7a233ccc97cc556cf7237f0db1ff65b986f27c
   RCTRequired: 6d3e854f0e7260a648badd0d44fc364bc9da9728
   RCTTypeSafety: c1f31d19349c6b53085766359caac425926fafaa
@@ -512,7 +512,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: 24600e3b1aaa77126989bc58b6747509a1ba14f3
   React-runtimeexecutor: a9904c6d0218fb9f8b19d6dd88607225927668f9
   ReactCommon: 149906e01aa51142707a10665185db879898e966
-  RNPdftron: c2ac554e770c36a8fa83d27e72829d3a57975c45
+  RNPdftron: 3d350a22d6f6fb390aa4302dfc13aac7644df1cd
   Yoga: 575c581c63e0d35c9a83f4b46d01d63abc1100ac
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
