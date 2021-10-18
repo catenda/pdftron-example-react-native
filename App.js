@@ -11,6 +11,7 @@ const App = () => {
   const toolbar = {
     [Config.CustomToolbarKey.Id]: 'toolbar',
     [Config.CustomToolbarKey.Name]: 'toolbar',
+    [Config.CustomToolbarKey.Icon]: Config.ToolbarIcons.Draw,
     [Config.CustomToolbarKey.Items]: [
       Config.Tools.annotationCreateFreeHand,
       Config.Tools.annotationCreateArrow,
@@ -38,6 +39,7 @@ const App = () => {
         Config.Buttons.thumbnailsButton,
         Config.Buttons.searchButton,
       ]}
+      defaultEraserType={Config.EraserType.hybrideEraser}
       disabledElements={[Config.Buttons.editMenuButton]}
       document={path}
       documentSliderEnabled={false}

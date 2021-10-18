@@ -1758,15 +1758,10 @@ camelcase@^6.0.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.2.0.tgz#924af881c9d525ac9d87f40d964e5cea982a1809"
   integrity sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
 
-caniuse-lite@^1.0.30001181:
-  version "1.0.30001202"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001202.tgz#4cb3bd5e8a808e8cd89e4e66c549989bc8137201"
-  integrity sha512-ZcijQNqrcF8JNLjzvEiXqX4JUYxoZa7Pvcsd9UD8Kz4TvhTonOSNRsK+qtvpVL4l6+T1Rh4LFtLfnNWg6BGWCQ==
-
-caniuse-lite@^1.0.30001219:
-  version "1.0.30001248"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001248.tgz#26ab45e340f155ea5da2920dadb76a533cb8ebce"
-  integrity sha512-NwlQbJkxUFJ8nMErnGtT0QTM2TJ33xgz4KXJSMIrjXIbDVdaYueGyjOrLKRtJC+rTiWfi6j5cnZN1NBiSBJGNw==
+caniuse-lite@^1.0.30001181, caniuse-lite@^1.0.30001219:
+  version "1.0.30001265"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001265.tgz"
+  integrity sha512-YzBnspggWV5hep1m9Z6sZVLOt7vrju8xWooFAgN6BA5qvy98qPAPb7vNUzypFaoh2pb3vlfzbDO8tB57UPGbtw==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -4178,10 +4173,10 @@ plist@^3.0.1:
     xmlbuilder "^9.0.7"
     xmldom "0.1.x"
 
-pod-install@0.1.24:
-  version "0.1.24"
-  resolved "https://registry.yarnpkg.com/pod-install/-/pod-install-0.1.24.tgz#690cfe2467a273697c50919cdcdd065b865ba9d1"
-  integrity sha512-CsLbM+AY9DFDBIVyiRxTvkw32fUCaoMV6bv5NSUo28MbjqgkFupvHIhApvbVEGAcLjxx/CaSGxtjTSULkgoGBw==
+pod-install@0.1.28:
+  version "0.1.28"
+  resolved "https://registry.yarnpkg.com/pod-install/-/pod-install-0.1.28.tgz#808ee14ce63bea47ccaeec93c4f26e1dae8fb94e"
+  integrity sha512-tycTNkEKzmntX4tijJGtVSUK5ZM4yid7JHyZgs7T6bM040so/avYMUS2FyZMSb7BAiiqEkqAepRL1P8QvZxNnQ==
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
@@ -4288,8 +4283,8 @@ react-native-codegen@^0.0.6:
     nullthrows "^1.1.1"
 
 "react-native-pdftron@github:PDFTron/pdftron-react-native":
-  version "2.0.3-beta.169"
-  resolved "https://codeload.github.com/PDFTron/pdftron-react-native/tar.gz/7a8059a7f76b0b18298ab54144a290b8d9c8cab4"
+  version "3.0.2-beta.5"
+  resolved "https://codeload.github.com/PDFTron/pdftron-react-native/tar.gz/588bc685264d4734061926c053689cf66c9f7726"
 
 react-native@0.64.2:
   version "0.64.2"
