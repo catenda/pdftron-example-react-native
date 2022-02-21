@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
+    "android": "scripts/android.sh",
+    "android:clean": "scripts/android:clean.sh",
+    "clear": "scripts/clear.sh",
     "ios": "react-native run-ios",
-    "start": "react-native start",
-    "clear": "watchman watch-del-all && rm -rf $TMPDIR/react-* && rm -rf node_modules/ && rm -rf ios/Pods",
     "lint": "eslint .",
-    "postinstall": "pod-install"
+    "start": "react-native start",
+    "postinstall": "scripts/postinstall.sh"
   },
   "dependencies": {
     "react": "17.0.2",
