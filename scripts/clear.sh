@@ -9,3 +9,4 @@ trap "exit" INT
 watchman watch-del-all
 rm -rf $TMPDIR/react-*
 rm -rf node_modules/
+rm -rf ios/Pods
