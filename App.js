@@ -5,8 +5,7 @@ import {Config, DocumentView, RNPdftron} from 'react-native-pdftron';
 const App = () => {
   RNPdftron.initialize('KEY_GOES_HERE');
 
-  const path =
-    'https://raw.githubusercontent.com/catenda/pdftron-example-react-native/main/files/image.jpg';
+  const path = 'https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf';
 
   const toolbar = {
     [Config.CustomToolbarKey.Id]: 'toolbar',

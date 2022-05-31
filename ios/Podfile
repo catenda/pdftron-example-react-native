@@ -1,7 +1,7 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-platform :ios, '12.0'
+platform :ios, '12.1'
 
 target 'pdftronExample' do
   config = use_native_modules!
@@ -12,22 +12,21 @@ target 'pdftronExample' do
     :hermes_enabled => false
   )
 
-  pod 'PDFNet', podspec: 'https://nightly-pdftron.s3-us-west-2.amazonaws.com/stable/2021-12-06/9.1/cocoapods/pdfnet/2021-12-06_stable_rev78719.podspec'
+  pod 'PDFNet', podspec: 'https://nightly-pdftron.s3-us-west-2.amazonaws.com/stable/2022-05-26/9.2/cocoapods/xcframeworks/pdfnet/2022-05-26_stable_rev79506.podspec'
 
   # Enables Flipper.
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable the next line.
-  use_flipper!({
-    'Flipper' => '0.102.0',
-    'Flipper-Folly' => '2.6.7',
-    'Flipper-RSocket' => '1.4.3',
-    'Flipper-DoubleConversion' => '3.1.7',
-    'Flipper-Glog' => '0.3.9',
-    'Flipper-PeerTalk' => '0.0.4'
-  })
+  use_flipper!({ 'Flipper' => '0.142.0' })
 
   post_install do |installer|
     react_native_post_install(installer)
+    
+    # Simulator compatibility with M1 based Macs
+    installer.pods_project.build_configurations.each do |config|
+      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+    end
   end
+
 end
