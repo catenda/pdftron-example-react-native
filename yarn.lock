@@ -4515,9 +4515,9 @@ react-native-codegen@^0.0.7:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
-"react-native-pdftron@github:catenda/pdftron-react-native#bimsync-3.0.2-beta.23":
-  version "3.0.2-beta.23"
-  resolved "https://codeload.github.com/catenda/pdftron-react-native/tar.gz/bdfb866278695cdc60a453a8604347ee3751c395"
+"react-native-pdftron@github:catenda/pdftron-react-native#bimsync-3.0.2-beta.102":
+  version "3.0.2-beta.102"
+  resolved "https://codeload.github.com/catenda/pdftron-react-native/tar.gz/483a410fd3b992dadb55b3c2f45e5dbc71d32988"
 
 react-native@0.65.2:
   version "0.65.2"

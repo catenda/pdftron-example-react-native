@@ -14,7 +14,7 @@
   "dependencies": {
     "react": "17.0.2",
     "react-native": "0.65.2",
-    "react-native-pdftron": "github:catenda/pdftron-react-native#bimsync-3.0.2-beta.23"
+    "react-native-pdftron": "github:catenda/pdftron-react-native#bimsync-3.0.2-beta.102"
   },
   "devDependencies": {
     "@babel/core": "7.13.10",
