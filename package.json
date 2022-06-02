@@ -13,19 +13,18 @@
   },
   "dependencies": {
     "react": "17.0.2",
-    "react-native": "0.65.2",
+    "react-native": "0.67.4",
     "react-native-pdftron": "github:catenda/pdftron-react-native#bimsync-3.0.2-beta.102"
   },
   "devDependencies": {
     "@babel/core": "7.13.10",
     "@babel/runtime": "7.13.10",
-    "@react-native-community/cli": "5.0.1",
-    "@react-native-community/cli-platform-android": "4.13.0",
-    "@react-native-community/cli-platform-ios": "5.0.1",
-    "@react-native-community/eslint-config": "0.0.5",
-    "eslint": "6.8.0",
-    "metro-react-native-babel-preset": "0.66.0",
-    "pod-install": "0.1.28",
-    "react-native-codegen": "^0.0.7"
+    "@react-native-community/cli": "6.2.0",
+    "@react-native-community/cli-platform-android": "6.3.0",
+    "@react-native-community/cli-platform-ios": "6.2.0",
+    "@react-native-community/eslint-config": "3.0.2",
+    "eslint": "7.32.0",
+    "metro-react-native-babel-preset": "0.66.2",
+    "pod-install": "0.1.36"
   }
 }
