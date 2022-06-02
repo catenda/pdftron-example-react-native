@@ -1,57 +1,23 @@
 import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {RNPdftron} from 'react-native-pdftron';
 
-import {Config, DocumentView, RNPdftron} from 'react-native-pdftron';
+import DocumentScreen from './App/Screens/DocumentScreen.js';
+import HomeScreen from './App/Screens/HomeScreen.js';
+
+const Tab = createBottomTabNavigator();
 
 const App = () => {
   RNPdftron.initialize('KEY_GOES_HERE');
 
-  const path = 'https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf';
-
-  const toolbar = {
-    [Config.CustomToolbarKey.Id]: 'toolbar',
-    [Config.CustomToolbarKey.Name]: 'toolbar',
-    [Config.CustomToolbarKey.Icon]: Config.ToolbarIcons.Draw,
-    [Config.CustomToolbarKey.Items]: [
-      Config.Tools.annotationCreateFreeHand,
-      Config.Tools.annotationCreateArrow,
-      Config.Tools.annotationCreateRectangle,
-      Config.Tools.annotationCreateEllipse,
-      Config.Tools.annotationCreateLine,
-      Config.Tools.annotationCreateFreeText,
-      Config.Tools.annotationCreatePolyline,
-      Config.Tools.annotationCreateStamp,
-      Config.Tools.annotationEraserTool,
-    ],
-  };
-
   return (
-    <DocumentView
-      annotationListEditingEnabled={false}
-      annotationToolbars={[toolbar]}
-      annotationMenuItems={[
-        Config.AnnotationMenu.style,
-        Config.AnnotationMenu.delete,
-        Config.AnnotationMenu.editText,
-      ]}
-      bottomToolbar={[
-        Config.Buttons.viewControlsButton,
-        Config.Buttons.thumbnailsButton,
-        Config.Buttons.searchButton,
-      ]}
-      defaultEraserType={Config.EraserType.hybrideEraser}
-      disabledElements={[Config.Buttons.editMenuButton]}
-      document={path}
-      documentSliderEnabled={false}
-      followSystemDarkMode={false}
-      hideScrollbars={true}
-      hideToolbarsOnTap={false}
-      hideTopAppNavBar={true}
-      hideViewModeItems={[Config.ViewModePickerItem.Crop]}
-      longPressMenuEnabled={false}
-      pageIndicatorEnabled={false}
-      showLeadingNavButton={false}
-      topAppNavBarRightBar={[]}
-    />
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Document" component={DocumentScreen} />
+      </Tab.Navigator>
+    </NavigationContainer>
   );
 };
 
