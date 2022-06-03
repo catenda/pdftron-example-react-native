@@ -344,7 +344,7 @@ PODS:
     - React-jsi (= 0.67.4)
     - React-logger (= 0.67.4)
     - React-perflogger (= 0.67.4)
-  - RNPdftron (3.0.2-beta.102):
+  - RNPdftron (3.0.2-beta.103):
     - PDFNet
     - React-Core
   - RNScreens (3.13.1):
@@ -548,7 +548,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: 3b52a7dced19cdb025b4f88ab26ceb2d85f30ba2
   React-runtimeexecutor: a9d3c82ddf7ffdad9fbe6a81c6d6f8c06385464d
   ReactCommon: 07d0c460b9ba9af3eaf1b8f5abe7daaad28c9c4e
-  RNPdftron: 9d24965aae3b6b5c78974c8bd98275edd3c5607e
+  RNPdftron: d6d4632dc9f7ca74ad2308ba4f2f13b834994ec6
   RNScreens: 40a2cb40a02a609938137a1e0acfbf8fc9eebf19
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   Yoga: d6b6a80659aa3e91aaba01d0012e7edcbedcbecd
