@@ -8,7 +8,13 @@ const DocumentListScreen = ({navigation}) => {
         onPress={() => {
           navigation.navigate('Document');
         }}>
-        <Text>Open Document</Text>
+        <Text>Open Document that download within PDFTron</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.navigate('DocumentFromLocalFileScreen');
+        }}>
+        <Text>Open Document that is opened as local file by PDFTron</Text>
       </TouchableOpacity>
     </View>
   );
@@ -17,7 +23,7 @@ const DocumentListScreen = ({navigation}) => {
 const Styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     alignItems: 'center',
   },
 });
