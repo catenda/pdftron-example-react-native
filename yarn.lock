@@ -4556,6 +4556,11 @@ react-native-codegen@^0.0.8:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
+react-native-file-access@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/react-native-file-access/-/react-native-file-access-2.4.2.tgz#7846a846075edec4b630661567fc5a9422f42926"
+  integrity sha512-NKy+nw/FhRfnokl266BWAd7bOx5K/WwvIS2hQOZu3pk2+4mJPeZp2ICfNVyXw46jBiifcjZno74UA9xpym/Pwg==
+
 "react-native-pdftron@github:catenda/pdftron-react-native#bimsync-3.0.2-beta.103":
   version "3.0.2-beta.103"
   resolved "https://codeload.github.com/catenda/pdftron-react-native/tar.gz/4b7b37e1b40ddcfe29c6d7c0b2f6ef4a47ca260f"
