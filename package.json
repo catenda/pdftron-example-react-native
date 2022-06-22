@@ -18,7 +18,7 @@
     "react": "17.0.2",
     "react-native": "0.67.4",
     "react-native-file-access": "^2.4.2",
-    "react-native-pdftron": "github:catenda/pdftron-react-native#bimsync-3.0.2-beta.103",
+    "react-native-pdftron": "github:catenda/pdftron-react-native#bimsync-3.0.2-beta.110",
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "3.11.1"
   },
