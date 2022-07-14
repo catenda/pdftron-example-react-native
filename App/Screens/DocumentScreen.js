@@ -1,15 +1,20 @@
 import React, {useEffect, useState} from 'react';
+import {Platform} from 'react-native';
 import {Config, DocumentView, RNPdftron} from 'react-native-pdftron';
 
 const DocumentScreen = () => {
-  const [isReadyToRender, setIsReadyToRender] = useState(false);
+  const [isReadyToRender, setIsReadyToRender] = useState(
+    Platform.OS !== 'android',
+  );
 
   const path = 'https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf';
 
   useEffect(() => {
-    RNPdftron.clearSavedViewerState().then(() => {
-      setIsReadyToRender(true);
-    });
+    if (Platform.OS === 'android') {
+      RNPdftron.clearSavedViewerState().then(() => {
+        setIsReadyToRender(true);
+      });
+    }
   }, []);
 
   const onDocumentError = error => {
