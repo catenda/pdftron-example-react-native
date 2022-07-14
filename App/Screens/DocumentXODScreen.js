@@ -1,16 +1,30 @@
 import React, {useEffect, useState} from 'react';
+import {Platform} from 'react-native';
 import {Dirs, FileSystem} from 'react-native-file-access';
 import {Config, DocumentView, RNPdftron} from 'react-native-pdftron';
 
 const DocumentXODScreen = () => {
-  const [isReadyToRender, setIsReadyToRender] = useState(false);
+  const [isReadyToRender, setIsReadyToRender] = useState(
+    Platform.OS !== 'android',
+  );
 
   useEffect(() => {
-    console.log(Dirs.MainBundleDir);
-    FileSystem.cpAsset('test.xod', Dirs.CacheDir + 'test.xod').then(() => {
-      RNPdftron.clearSavedViewerState().then(() => {
+    FileSystem.exists(Dirs.CacheDir + '/test.xod').then(exists => {
+      if (!exists) {
+        FileSystem.cpAsset('test.xod', Dirs.CacheDir + '/test.xod')
+          .then(() => {
+            if (Platform.OS === 'android') {
+              RNPdftron.clearSavedViewerState().then(() => {
+                setIsReadyToRender(true);
+              });
+            }
+          })
+          .catch(error => {
+            console.log(error);
+          });
+      } else {
         setIsReadyToRender(true);
-      });
+      }
     });
   }, []);
 
@@ -32,7 +46,7 @@ const DocumentXODScreen = () => {
       ]}
       bottomToolbarEnabled={false}
       disabledElements={[Config.Buttons.listsButton]}
-      document={Dirs.CacheDir + 'test.xod'}
+      document={Dirs.CacheDir + '/test.xod'}
       followSystemDarkMode={false}
       hideAnnotationToolbarSwitcher={true}
       hideThumbnailFilterModes={[
