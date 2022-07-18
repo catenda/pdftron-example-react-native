@@ -4561,9 +4561,9 @@ react-native-file-access@^2.4.2:
   resolved "https://registry.yarnpkg.com/react-native-file-access/-/react-native-file-access-2.4.2.tgz#7846a846075edec4b630661567fc5a9422f42926"
   integrity sha512-NKy+nw/FhRfnokl266BWAd7bOx5K/WwvIS2hQOZu3pk2+4mJPeZp2ICfNVyXw46jBiifcjZno74UA9xpym/Pwg==
 
-"react-native-pdftron@github:catenda/pdftron-react-native#bimsync-3.0.2-beta.115":
-  version "3.0.2-beta.115"
-  resolved "https://codeload.github.com/catenda/pdftron-react-native/tar.gz/ace1ab2a60f49522f81bd279531853ed3908efbb"
+"react-native-pdftron@github:catenda/pdftron-react-native#bimsync-3.0.2-beta.118":
+  version "3.0.2-beta.118"
+  resolved "https://codeload.github.com/catenda/pdftron-react-native/tar.gz/15428db48a629d24346b90d45e049fc95c907293"
 
 react-native-safe-area-context@3.3.2:
   version "3.3.2"
