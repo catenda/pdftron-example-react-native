@@ -16,7 +16,7 @@
     "@react-navigation/native": "6.0.6",
     "@react-navigation/native-stack": "6.6.2",
     "react": "17.0.2",
-    "react-native": "0.67.4",
+    "react-native": "0.68.2",
     "react-native-file-access": "^2.4.2",
     "react-native-pdftron": "github:catenda/pdftron-react-native#bimsync-3.0.2-beta.119",
     "react-native-safe-area-context": "3.3.2",
@@ -25,6 +25,6 @@
   "devDependencies": {
     "@react-native-community/eslint-config": "3.0.0",
     "eslint": "7.32.0",
-    "metro-react-native-babel-preset": "0.66.2"
+    "metro-react-native-babel-preset": "0.67.0"
   }
 }
