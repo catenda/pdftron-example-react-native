@@ -12,7 +12,7 @@ target 'pdftronExample' do
     :hermes_enabled => false
   )
 
-  pod 'PDFNet', podspec: 'https://nightly-pdftron.s3-us-west-2.amazonaws.com/stable/2022-07-17/cocoapods/xcframeworks/pdfnet/2022-07-17_stable_rev80132.podspec'
+  pod 'PDFNet', podspec: 'https://nightly-pdftron.s3-us-west-2.amazonaws.com/stable/2022-07-21/cocoapods/xcframeworks/pdfnet/2022-07-21_stable_rev80148.podspec'
 
   # Enables Flipper.
   #
