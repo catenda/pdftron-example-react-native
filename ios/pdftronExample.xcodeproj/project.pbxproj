@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		161D13372880676C00A08A21 /* test.docx in Resources */ = {isa = PBXBuildFile; fileRef = 161D13352880676C00A08A21 /* test.docx */; };
 		161D13382880676C00A08A21 /* test.xod in Resources */ = {isa = PBXBuildFile; fileRef = 161D13362880676C00A08A21 /* test.xod */; };
+		1664F14B287C448B001DED43 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1664F14A287C448B001DED43 /* AppDelegate.mm */; };
 		166863CE268C9EFB00F39699 /* PTLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 166863CD268C9EFB00F39699 /* PTLocalizable.strings */; };
 		16A1276F26CC2665009AE86E /* PTAnnotationStyleDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16A1276E26CC2665009AE86E /* PTAnnotationStyleDefaults.plist */; };
 		16B5B806270DA46700E9D302 /* EmptyFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B5B805270DA46700E9D302 /* EmptyFile.swift */; };
@@ -23,12 +23,12 @@
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* pdftronExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pdftronExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = pdftronExample/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = pdftronExample/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = pdftronExample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = pdftronExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = pdftronExample/main.m; sourceTree = "<group>"; };
 		161D13352880676C00A08A21 /* test.docx */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.docx; path = ../android/app/src/main/assets/test.docx; sourceTree = "<group>"; };
 		161D13362880676C00A08A21 /* test.xod */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.xod; path = ../android/app/src/main/assets/test.xod; sourceTree = "<group>"; };
+		1664F14A287C448B001DED43 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		166863CD268C9EFB00F39699 /* PTLocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = PTLocalizable.strings; sourceTree = "<group>"; };
 		16A1276E26CC2665009AE86E /* PTAnnotationStyleDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PTAnnotationStyleDefaults.plist; sourceTree = "<group>"; };
 		16B5B805270DA46700E9D302 /* EmptyFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyFile.swift; sourceTree = "<group>"; };
@@ -60,8 +60,8 @@
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				1664F14A287C448B001DED43 /* AppDelegate.mm */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				161D13352880676C00A08A21 /* test.docx */,
 				161D13362880676C00A08A21 /* test.xod */,
@@ -263,6 +263,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-pdftronExample/Pods-pdftronExample-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flipper-DoubleConversion/double-conversion.framework/double-conversion",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flipper-Glog/glog.framework/glog",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/PDFNet/PDFNet.framework/PDFNet",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/PDFNet/Tools.framework/Tools",
@@ -270,6 +271,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/double-conversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PDFNet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tools.framework",
@@ -305,8 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				16B5B806270DA46700E9D302 /* EmptyFile.swift in Sources */,
+				1664F14B287C448B001DED43 /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
