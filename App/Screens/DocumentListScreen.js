@@ -8,19 +8,25 @@ const DocumentListScreen = ({navigation}) => {
         onPress={() => {
           navigation.navigate('Document');
         }}>
-        <Text>Open PDF Document</Text>
+        <Text>Download & Open PDF Document</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.navigate('DocumentPDFScreen');
+        }}>
+        <Text>Open Local PDF Document</Text>
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => {
           navigation.navigate('DocumentOfficeScreen');
         }}>
-        <Text>Open Office Document</Text>
+        <Text>Open Local Office Document</Text>
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => {
           navigation.navigate('DocumentXODScreen');
         }}>
-        <Text>Open XOD Document</Text>
+        <Text>Open Local XOD Document</Text>
       </TouchableOpacity>
     </View>
   );
