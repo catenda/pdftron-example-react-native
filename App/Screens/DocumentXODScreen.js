@@ -2,14 +2,12 @@ import React, {useEffect, useState} from 'react';
 import {Dirs, FileSystem} from 'react-native-file-access';
 import {Config, DocumentView, RNPdftron} from 'react-native-pdftron';
 
-const DocumentFromLocalFileScreen = () => {
+const DocumentXODScreen = () => {
   const [isReadyToRender, setIsReadyToRender] = useState(false);
 
-  const downloadPath = 'https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf';
-
   useEffect(() => {
-    const filePath = Dirs.CacheDir + 'pdfref.pdf';
-    FileSystem.fetch(downloadPath, {path: filePath}).then(() => {
+    console.log(Dirs.MainBundleDir);
+    FileSystem.cpAsset('test.xod', Dirs.CacheDir + 'test.xod').then(() => {
       RNPdftron.clearSavedViewerState().then(() => {
         setIsReadyToRender(true);
       });
@@ -34,7 +32,7 @@ const DocumentFromLocalFileScreen = () => {
       ]}
       bottomToolbarEnabled={false}
       disabledElements={[Config.Buttons.listsButton]}
-      document={Dirs.CacheDir + 'pdfref.pdf'}
+      document={Dirs.CacheDir + 'test.xod'}
       followSystemDarkMode={false}
       hideAnnotationToolbarSwitcher={true}
       hideThumbnailFilterModes={[
@@ -61,4 +59,4 @@ const DocumentFromLocalFileScreen = () => {
   ) : null;
 };
 
-export default DocumentFromLocalFileScreen;
+export default DocumentXODScreen;

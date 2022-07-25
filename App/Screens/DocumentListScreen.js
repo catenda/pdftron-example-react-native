@@ -8,13 +8,19 @@ const DocumentListScreen = ({navigation}) => {
         onPress={() => {
           navigation.navigate('Document');
         }}>
-        <Text>Open Document that download within PDFTron</Text>
+        <Text>Open PDF Document</Text>
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => {
-          navigation.navigate('DocumentFromLocalFileScreen');
+          navigation.navigate('DocumentOfficeScreen');
         }}>
-        <Text>Open Document that is opened as local file by PDFTron</Text>
+        <Text>Open Office Document</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.navigate('DocumentXODScreen');
+        }}>
+        <Text>Open XOD Document</Text>
       </TouchableOpacity>
     </View>
   );
