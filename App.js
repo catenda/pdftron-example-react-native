@@ -5,8 +5,9 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {RNPdftron} from 'react-native-pdftron';
 
 import DocumentScreen from './App/Screens/DocumentScreen.js';
-import DocumentFromLocalFileScreen from './App/Screens/DocumentFromLocalFileScreen.js';
+import DocumentOfficeScreen from './App/Screens/DocumentOfficeScreen.js';
 import DocumentListScreen from './App/Screens/DocumentListScreen.js';
+import DocumentXODScreen from './App/Screens/DocumentXODScreen.js';
 import HomeScreen from './App/Screens/HomeScreen.js';
 
 const Stack = createNativeStackNavigator();
@@ -16,9 +17,10 @@ const DocumentStack = () => (
   <Stack.Navigator initialRouteName="DocumentList">
     <Stack.Screen name="Document" component={DocumentScreen} />
     <Stack.Screen
-      name="DocumentFromLocalFileScreen"
-      component={DocumentFromLocalFileScreen}
+      name="DocumentOfficeScreen"
+      component={DocumentOfficeScreen}
     />
+    <Stack.Screen name="DocumentXODScreen" component={DocumentXODScreen} />
     <Stack.Screen name="DocumentList" component={DocumentListScreen} />
   </Stack.Navigator>
 );
