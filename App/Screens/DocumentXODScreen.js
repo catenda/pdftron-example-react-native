@@ -52,26 +52,23 @@ const DocumentXODScreen = () => {
     <>
       {!isDocumentLoaded && <View style={Styles.container} />}
       <DocumentView
-        annotationToolbars={[]}
-        bottomToolbar={[
-          Config.Buttons.viewControlsButton,
-          Config.Buttons.thumbnailsButton,
-          Config.Buttons.searchButton,
-        ]}
+        annotationToolbars={[]} // Hide second top toolbar on Android
         bottomToolbarEnabled={false}
         disabledElements={[Config.Buttons.listsButton]}
         document={Dirs.CacheDir + '/test.xod'}
+        documentSliderEnabled={false} // Shows native scroll indicator on iOS, nothing on Android
         followSystemDarkMode={false}
         hideAnnotationToolbarSwitcher={true}
         hideThumbnailFilterModes={[
           Config.ThumbnailFilterMode.Annotated,
           Config.ThumbnailFilterMode.Bookmarked,
         ]}
-        hideViewModeItems={[Config.ViewModePickerItem.Crop]} // Android hide crop feature under view settings
+        hideViewModeItems={[Config.ViewModePickerItem.Crop]}
         keyboardShortcutsEnabled={false}
         longPressMenuEnabled={false}
+        pageIndicatorEnabled={Platform.OS !== 'android'}
         readOnly={true} // Disable all editing methods including Apple PencilKit
-        saveStateEnabled={true}
+        saveStateEnabled={Platform.OS === 'android'}
         showLeadingNavButton={false}
         showQuickNavigationButton={false}
         tabletLayoutEnabled={false}
