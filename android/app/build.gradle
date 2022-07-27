@@ -274,14 +274,6 @@ android {
 
         }
     }
-
-    // PDFTron uses version 1.5.0 which requires SDK 31
-    configurations.all {
-        resolutionStrategy.force "com.google.android.material:material:1.4.0"
-        resolutionStrategy.force "androidx.room:room-runtime:2.2.5"
-        resolutionStrategy.force "androidx.room:room-compiler:2.2.5"
-        resolutionStrategy.force "androidx.room:room-rxjava2:2.2.5"
-    }
 }
 
 dependencies {
