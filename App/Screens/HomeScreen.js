@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
+import {Text, View, StyleSheet, Platform, TouchableOpacity} from 'react-native';
 import {RNPdftron} from 'react-native-pdftron';
 
 const HomeScreen = () => (
@@ -7,9 +7,11 @@ const HomeScreen = () => (
     <Text>Home</Text>
     <TouchableOpacity
       onPress={() => {
-        RNPdftron.clearSavedViewerState().then(() => {
-          console.log('Cleared saved viewer state');
-        });
+        if (Platform.OS === 'android') {
+          RNPdftron.clearSavedViewerState().then(() => {
+            console.log('Cleared saved viewer state');
+          });
+        }
       }}>
       <Text>Reset Viewer State</Text>
     </TouchableOpacity>
