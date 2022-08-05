@@ -1,10 +1,26 @@
-import React from 'react';
-import {Config, DocumentView} from 'react-native-pdftron';
+import React, {useEffect, useState} from 'react';
+import {Config, DocumentView, RNPdftron} from 'react-native-pdftron';
 
 const DocumentScreen = () => {
+  const [isReadyToRender, setIsReadyToRender] = useState(false);
+
   const path = 'https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf';
 
-  return (
+  useEffect(() => {
+    RNPdftron.clearSavedViewerState().then(() => {
+      setIsReadyToRender(true);
+    });
+  }, []);
+
+  const onDocumentError = error => {
+    console.log('Error:', error);
+  };
+
+  const onDocumentLoaded = () => {
+    console.log('Document loaded.');
+  };
+
+  return isReadyToRender ? (
     <DocumentView
       annotationToolbars={[]}
       bottomToolbar={[
@@ -25,7 +41,7 @@ const DocumentScreen = () => {
       keyboardShortcutsEnabled={false}
       longPressMenuEnabled={false}
       readOnly={true} // Disable all editing methods including Apple PencilKit
-      saveStateEnabled={false}
+      saveStateEnabled={true}
       showLeadingNavButton={false}
       showQuickNavigationButton={false}
       tabletLayoutEnabled={false}
@@ -35,8 +51,10 @@ const DocumentScreen = () => {
         Config.Buttons.thumbnailsButton,
         Config.Buttons.viewControlsButton,
       ]}
+      onDocumentError={onDocumentError}
+      onDocumentLoaded={onDocumentLoaded}
     />
-  );
+  ) : null;
 };
 
 export default DocumentScreen;
