@@ -16,17 +16,17 @@ const DocumentPDFScreen = () => {
       if (!exists) {
         FileSystem.cpAsset('test.pdf', Dirs.CacheDir + '/test.pdf')
           .then(() => {
-            if (Platform.OS === 'android') {
-              RNPdftron.clearSavedViewerState().then(() => {
-                setIsReadyToRender(true);
-              });
-            }
+            setIsReadyToRender(true);
           })
           .catch(error => {
             console.log(error);
           });
       } else {
-        setIsReadyToRender(true);
+        if (Platform.OS === 'android') {
+          RNPdftron.clearSavedViewerState().then(() => {
+            setIsReadyToRender(true);
+          });
+        }
       }
     });
   }, []);
