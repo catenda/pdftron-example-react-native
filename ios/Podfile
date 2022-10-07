@@ -16,7 +16,7 @@ target 'pdftronExample' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  pod 'PDFNet', podspec: 'https://nightly-pdftron.s3-us-west-2.amazonaws.com/stable/2022-07-26/cocoapods/xcframeworks/pdfnet/2022-07-26_stable_rev80152.podspec'
+  pod 'PDFNet', podspec: 'https://nightly-pdftron-uploads.s3.us-west-1.amazonaws.com/stable/2022-10-04/cocoapods/xcframeworks/pdfnet/2022-10-04_stable_rev80283.podspec'
 
   # Enables Flipper.
   #
