@@ -20,7 +20,7 @@
     "react-native-file-access": "^2.4.2",
     "react-native-pdftron": "github:catenda/pdftron-react-native#bimsync-3.0.2-beta.137",
     "react-native-safe-area-context": "3.3.2",
-    "react-native-screens": "3.11.1"
+    "react-native-screens": "3.17.0"
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "3.0.0",
