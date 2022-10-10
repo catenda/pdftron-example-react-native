@@ -15,16 +15,16 @@
     "@react-navigation/bottom-tabs": "6.0.9",
     "@react-navigation/native": "6.0.6",
     "@react-navigation/native-stack": "6.6.2",
-    "react": "17.0.2",
-    "react-native": "0.68.2",
+    "react": "18.0.0",
+    "react-native": "0.69.6",
     "react-native-file-access": "^2.4.2",
     "react-native-pdftron": "github:catenda/pdftron-react-native#bimsync-3.0.2-beta.137",
     "react-native-safe-area-context": "3.3.2",
-    "react-native-screens": "3.11.1"
+    "react-native-screens": "3.17.0"
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "3.0.0",
     "eslint": "7.32.0",
-    "metro-react-native-babel-preset": "0.67.0"
+    "metro-react-native-babel-preset": "0.70.3"
   }
 }
