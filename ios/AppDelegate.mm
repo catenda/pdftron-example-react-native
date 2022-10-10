@@ -69,6 +69,7 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
   // Switch this bool to turn on and off the concurrent root
   return true;
 }
+
 - (NSDictionary *)prepareInitialProps
 {
   NSMutableDictionary *initProps = [NSMutableDictionary new];
