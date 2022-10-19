@@ -12,9 +12,9 @@ const DocumentOfficeScreen = () => {
   const [isDocumentLoaded, setIsDocumentLoaded] = useState(false);
 
   useEffect(() => {
-    FileSystem.exists(Dirs.CacheDir + '/test.docx').then(exists => {
+    FileSystem.exists(Dirs.CacheDir + '/test.pptx').then(exists => {
       if (!exists) {
-        FileSystem.cpAsset('test.docx', Dirs.CacheDir + '/test.docx')
+        FileSystem.cpAsset('test.pptx', Dirs.CacheDir + '/test.pptx')
           .then(() => {
             setIsReadyToRender(true);
           })
@@ -55,7 +55,7 @@ const DocumentOfficeScreen = () => {
         annotationToolbars={[]} // Hide second top toolbar on Android
         bottomToolbarEnabled={false}
         disabledElements={[Config.Buttons.listsButton]}
-        document={Dirs.CacheDir + '/test.docx'}
+        document={Dirs.CacheDir + '/test.pptx'}
         documentSliderEnabled={false} // Shows native scroll indicator on iOS, nothing on Android
         followSystemDarkMode={false}
         hideAnnotationToolbarSwitcher={true}
