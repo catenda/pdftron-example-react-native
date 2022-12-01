@@ -58,6 +58,7 @@ const DocumentPDFScreen = () => {
         document={Dirs.CacheDir + '/test.pdf'}
         documentSliderEnabled={false} // Shows native scroll indicator on iOS, nothing on Android
         followSystemDarkMode={false}
+        forceAppTheme={Config.ThemeOptions.ThemeDark}
         hideAnnotationToolbarSwitcher={true}
         hideThumbnailFilterModes={[
           Config.ThumbnailFilterMode.Annotated,
