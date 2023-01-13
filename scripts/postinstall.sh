@@ -11,5 +11,3 @@ bundle check || bundle install
 cd ios/
 bundle exec pod check || bundle exec pod install || (rm -rf Pods/ && bundle exec pod install)
 cd ..
-
-yarn jetify
