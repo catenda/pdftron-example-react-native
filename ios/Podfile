@@ -39,7 +39,7 @@ target 'pdftronExample' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  pod 'PDFNet', podspec: 'https://nightly-pdftron-uploads.s3.us-west-1.amazonaws.com/stable/2022-10-04/cocoapods/xcframeworks/pdfnet/2022-10-04_stable_rev80283.podspec'
+  pod 'PDFNet', podspec: 'https://pdftron.com/downloads/ios/react-native/latest.podspec'
 
   post_install do |installer|
     react_native_post_install(installer,

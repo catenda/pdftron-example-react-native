@@ -5295,9 +5295,9 @@ react-native-gradle-plugin@^0.71.15:
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.15.tgz#9e6b506f30729fe8eb086981702f4e3c891d2b13"
   integrity sha512-7S3pAuPaQJlhax6EZ4JMsDNpj05TfuzX9gPgWLrFfAIWIFLuJ6aDQYAZy2TEI9QJALPoWrj8LWaqP/DGYh14pw==
 
-"react-native-pdftron@github:catenda/pdftron-react-native#bimsync-3.0.2-beta.137":
-  version "3.0.2-beta.137"
-  resolved "https://codeload.github.com/catenda/pdftron-react-native/tar.gz/cb954e27246c17754f48fb246601e6faccf7aeca"
+"react-native-pdftron@github:catenda/pdftron-react-native#bimsync-3.0.3-13":
+  version "3.0.3-13"
+  resolved "https://codeload.github.com/catenda/pdftron-react-native/tar.gz/7af9c700fca6c2344a70512b85e34283fe5518ff"
   dependencies:
     deprecated-react-native-prop-types "*"
 
