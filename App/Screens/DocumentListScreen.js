@@ -28,6 +28,12 @@ const DocumentListScreen = ({navigation}) => {
         }}>
         <Text>Open Local XOD Document</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.navigate('ImageScreen');
+        }}>
+        <Text>Open Local Image</Text>
+      </TouchableOpacity>
     </View>
   );
 };
