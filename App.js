@@ -9,6 +9,7 @@ import DocumentListScreen from './App/Screens/DocumentListScreen.js';
 import DocumentOfficeScreen from './App/Screens/DocumentOfficeScreen.js';
 import DocumentPDFScreen from './App/Screens/DocumentPDFScreen.js';
 import DocumentXODScreen from './App/Screens/DocumentXODScreen.js';
+import ImageScreen from './App/Screens/ImageScreen.js';
 import HomeScreen from './App/Screens/HomeScreen.js';
 
 const Stack = createNativeStackNavigator();
@@ -23,6 +24,7 @@ const DocumentStack = () => (
       component={DocumentOfficeScreen}
     />
     <Stack.Screen name="DocumentXODScreen" component={DocumentXODScreen} />
+    <Stack.Screen name="ImageScreen" component={ImageScreen} />
     <Stack.Screen name="DocumentList" component={DocumentListScreen} />
   </Stack.Navigator>
 );
