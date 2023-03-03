@@ -12,9 +12,9 @@
     "postinstall": "scripts/postinstall.sh"
   },
   "dependencies": {
-    "@react-navigation/bottom-tabs": "6.5.5",
-    "@react-navigation/native": "6.1.4",
-    "@react-navigation/native-stack": "6.9.10",
+    "@react-navigation/bottom-tabs": "6.5.7",
+    "@react-navigation/native": "6.1.6",
+    "@react-navigation/native-stack": "6.9.12",
     "react": "18.2.0",
     "react-native": "0.71.3",
     "react-native-file-access": "2.5.2",
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "3.2.0",
-    "eslint": "8.34.0",
+    "eslint": "8.35.0",
     "metro-react-native-babel-preset": "0.73.7"
   }
 }
