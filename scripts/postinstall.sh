@@ -6,7 +6,7 @@ trap "exit" INT
 # debug log
 # set -x
 
-bundle check || bundle install
+bundle install
 
 cd ios/
 bundle exec pod check || bundle exec pod install || (rm -rf Pods/ && bundle exec pod install)
