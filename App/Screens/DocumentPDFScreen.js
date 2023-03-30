@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {Platform, StyleSheet, View} from 'react-native';
 import {Dirs, FileSystem} from 'react-native-file-access';
 import {Config, DocumentView, RNPdftron} from 'react-native-pdftron';
@@ -6,6 +6,7 @@ import {useIsFocused} from '@react-navigation/native';
 
 const DocumentPDFScreen = () => {
   const isFocused = useIsFocused();
+  const pdfTronRef = useRef(null);
   const [isReadyToRender, setIsReadyToRender] = useState(
     Platform.OS !== 'android',
   );
@@ -44,6 +45,11 @@ const DocumentPDFScreen = () => {
   };
 
   const onDocumentLoaded = () => {
+    if (pdfTronRef.current) {
+      pdfTronRef.current.setColorPostProcessMode(
+        Config.ColorPostProcessMode.None,
+        );
+      }
     console.log('Document loaded.');
     setIsDocumentLoaded(true);
   };
@@ -58,6 +64,7 @@ const DocumentPDFScreen = () => {
         document={Dirs.CacheDir + '/test.pdf'}
         documentSliderEnabled={false} // Shows native scroll indicator on iOS, nothing on Android
         followSystemDarkMode={false}
+        forceAppTheme={Config.ThemeOptions.ThemeDark}
         hideAnnotationToolbarSwitcher={true}
         hideThumbnailFilterModes={[
           Config.ThumbnailFilterMode.Annotated,
@@ -68,6 +75,7 @@ const DocumentPDFScreen = () => {
         longPressMenuEnabled={false}
         pageIndicatorEnabled={Platform.OS !== 'android'}
         readOnly={true} // Disable all editing methods including Apple PencilKit
+        ref={pdfTronRef}
         saveStateEnabled={Platform.OS === 'android'}
         showLeadingNavButton={false}
         showQuickNavigationButton={false}
