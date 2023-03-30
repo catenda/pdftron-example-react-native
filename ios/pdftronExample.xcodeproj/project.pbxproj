@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		161D13372880676C00A08A21 /* test.docx in Resources */ = {isa = PBXBuildFile; fileRef = 161D13352880676C00A08A21 /* test.docx */; };
-		161D13382880676C00A08A21 /* test.xod in Resources */ = {isa = PBXBuildFile; fileRef = 161D13362880676C00A08A21 /* test.xod */; };
 		1664F14B287C448B001DED43 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1664F14A287C448B001DED43 /* AppDelegate.mm */; };
 		166863CE268C9EFB00F39699 /* PTLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 166863CD268C9EFB00F39699 /* PTLocalizable.strings */; };
-		167F4FD829B22C90001ED875 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 167F4FD729B22C90001ED875 /* image.jpg */; };
 		16A1276F26CC2665009AE86E /* PTAnnotationStyleDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16A1276E26CC2665009AE86E /* PTAnnotationStyleDefaults.plist */; };
 		16B5B806270DA46700E9D302 /* EmptyFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B5B805270DA46700E9D302 /* EmptyFile.swift */; };
-		16BA1CF3288EAA31002B5CDB /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 16BA1CF2288EAA31002B5CDB /* test.pdf */; };
+		16BDE03229D5C1B20086A423 /* test.docx in Resources */ = {isa = PBXBuildFile; fileRef = 16BDE02E29D5C1B20086A423 /* test.docx */; };
+		16BDE03329D5C1B20086A423 /* test.xod in Resources */ = {isa = PBXBuildFile; fileRef = 16BDE02F29D5C1B20086A423 /* test.xod */; };
+		16BDE03429D5C1B20086A423 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16BDE03029D5C1B20086A423 /* image.jpg */; };
+		16BDE03529D5C1B20086A423 /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 16BDE03129D5C1B20086A423 /* test.pdf */; };
 		4A2551C0EC25BBEBE9F975F6 /* libPods-pdftronExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AF8906F8CF68B346BD1FAB /* libPods-pdftronExample.a */; };
 /* End PBXBuildFile section */
 
@@ -27,14 +27,14 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = pdftronExample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = pdftronExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = pdftronExample/main.m; sourceTree = "<group>"; };
-		161D13352880676C00A08A21 /* test.docx */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.docx; path = ../android/app/src/main/assets/test.docx; sourceTree = "<group>"; };
-		161D13362880676C00A08A21 /* test.xod */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.xod; path = ../android/app/src/main/assets/test.xod; sourceTree = "<group>"; };
 		1664F14A287C448B001DED43 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		166863CD268C9EFB00F39699 /* PTLocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = PTLocalizable.strings; sourceTree = "<group>"; };
-		167F4FD729B22C90001ED875 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image.jpg; path = ../files/image.jpg; sourceTree = "<group>"; };
 		16A1276E26CC2665009AE86E /* PTAnnotationStyleDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PTAnnotationStyleDefaults.plist; sourceTree = "<group>"; };
 		16B5B805270DA46700E9D302 /* EmptyFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyFile.swift; sourceTree = "<group>"; };
-		16BA1CF2288EAA31002B5CDB /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test.pdf; sourceTree = "<group>"; };
+		16BDE02E29D5C1B20086A423 /* test.docx */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.docx; path = ../assets/test.docx; sourceTree = "<group>"; };
+		16BDE02F29D5C1B20086A423 /* test.xod */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.xod; path = ../assets/test.xod; sourceTree = "<group>"; };
+		16BDE03029D5C1B20086A423 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image.jpg; path = ../assets/image.jpg; sourceTree = "<group>"; };
+		16BDE03129D5C1B20086A423 /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = test.pdf; path = ../assets/test.pdf; sourceTree = "<group>"; };
 		21AF8906F8CF68B346BD1FAB /* libPods-pdftronExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pdftronExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5C02C273BF4671A7042E91 /* Pods-pdftronExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample.debug.xcconfig"; path = "Target Support Files/Pods-pdftronExample/Pods-pdftronExample.debug.xcconfig"; sourceTree = "<group>"; };
 		A3292CC35902F69631B14E14 /* Pods-pdftronExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample.release.xcconfig"; path = "Target Support Files/Pods-pdftronExample/Pods-pdftronExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,15 +57,15 @@
 		13B07FAE1A68108700A75B9A /* pdftronExample */ = {
 			isa = PBXGroup;
 			children = (
+				16BDE03029D5C1B20086A423 /* image.jpg */,
+				16BDE02E29D5C1B20086A423 /* test.docx */,
+				16BDE03129D5C1B20086A423 /* test.pdf */,
+				16BDE02F29D5C1B20086A423 /* test.xod */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				1664F14A287C448B001DED43 /* AppDelegate.mm */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				161D13352880676C00A08A21 /* test.docx */,
-				161D13362880676C00A08A21 /* test.xod */,
-				16BA1CF2288EAA31002B5CDB /* test.pdf */,
-				167F4FD729B22C90001ED875 /* image.jpg */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				166863CD268C9EFB00F39699 /* PTLocalizable.strings */,
 				16A1276E26CC2665009AE86E /* PTAnnotationStyleDefaults.plist */,
@@ -184,12 +184,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				166863CE268C9EFB00F39699 /* PTLocalizable.strings in Resources */,
-				161D13372880676C00A08A21 /* test.docx in Resources */,
-				16BA1CF3288EAA31002B5CDB /* test.pdf in Resources */,
+				16BDE03229D5C1B20086A423 /* test.docx in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				167F4FD829B22C90001ED875 /* image.jpg in Resources */,
-				161D13382880676C00A08A21 /* test.xod in Resources */,
+				16BDE03329D5C1B20086A423 /* test.xod in Resources */,
 				16A1276F26CC2665009AE86E /* PTAnnotationStyleDefaults.plist in Resources */,
+				16BDE03429D5C1B20086A423 /* image.jpg in Resources */,
+				16BDE03529D5C1B20086A423 /* test.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
