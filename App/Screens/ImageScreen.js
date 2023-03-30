@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {Platform, StyleSheet, View} from 'react-native';
 import {Dirs, FileSystem} from 'react-native-file-access';
 import {Config, DocumentView, RNPdftron} from 'react-native-pdftron';
@@ -26,6 +26,7 @@ const TOOLBAR = {
 
 const ImageScreen = () => {
   const isFocused = useIsFocused();
+  const pdfTronRef = useRef(null);
   const [isReadyToRender, setIsReadyToRender] = useState(
     Platform.OS !== 'android',
   );
@@ -64,7 +65,12 @@ const ImageScreen = () => {
   };
 
   const onImageLoaded = () => {
-    console.log('Image loaded.');
+    if (pdfTronRef.current) {
+      pdfTronRef.current.setColorPostProcessMode(
+        Config.ColorPostProcessMode.None,
+        );
+      }
+    console.log('Document loaded.');
     setIsImageLoaded(true);
   };
 
@@ -85,6 +91,7 @@ const ImageScreen = () => {
         hideTopAppNavBar={true}
         longPressMenuEnabled={false}
         pageIndicatorEnabled={false}
+        ref={pdfTronRef}
         saveStateEnabled={false}
         onDocumentError={onImageError}
         onDocumentLoaded={onImageLoaded}
