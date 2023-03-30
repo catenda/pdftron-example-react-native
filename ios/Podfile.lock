@@ -78,7 +78,7 @@ PODS:
   - hermes-engine/Pre-built (0.71.3)
   - libevent (2.1.12)
   - OpenSSL-Universal (1.1.1100)
-  - PDFNet (3.0.3-12)
+  - PDFNet (10.0.0.81691)
   - RCT-Folly (2021.07.22.00):
     - boost
     - DoubleConversion
@@ -423,7 +423,7 @@ PODS:
     - React-jsi (= 0.71.3)
     - React-logger (= 0.71.3)
     - React-perflogger (= 0.71.3)
-  - RNPdftron (3.0.3-13):
+  - RNPdftron (3.0.3-17):
     - PDFNet
     - React-Core
   - RNScreens (3.20.0):
@@ -465,7 +465,7 @@ DEPENDENCIES:
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
   - libevent (~> 2.1.12)
   - OpenSSL-Universal (= 1.1.1100)
-  - PDFNet (from `https://pdftron.com/downloads/ios/react-native/latest.podspec`)
+  - PDFNet (from `https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/10.0.0.81691.podspec`)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
@@ -534,7 +534,7 @@ EXTERNAL SOURCES:
   hermes-engine:
     :podspec: "../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec"
   PDFNet:
-    :podspec: https://pdftron.com/downloads/ios/react-native/latest.podspec
+    :podspec: https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/10.0.0.81691.podspec
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTRequired:
@@ -620,7 +620,7 @@ SPEC CHECKSUMS:
   hermes-engine: 38bfe887e456b33b697187570a08de33969f5db7
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
-  PDFNet: ea0114b0634e7583d9b8f7a194821e5845a4f3f5
+  PDFNet: fb77a7dd51874529f4406b94054b1725f85d00dc
   RCT-Folly: 424b8c9a7a0b9ab2886ffe9c3b041ef628fd4fb1
   RCTRequired: bec48f07daf7bcdc2655a0cde84e07d24d2a9e2a
   RCTTypeSafety: 171394eebacf71e1cfad79dbfae7ee8fc16ca80a
@@ -650,13 +650,13 @@ SPEC CHECKSUMS:
   React-RCTVibration: 5199a180d04873366a83855de55ac33ce60fe4d5
   React-runtimeexecutor: 7bf0dafc7b727d93c8cb94eb00a9d3753c446c3e
   ReactCommon: 6f65ea5b7d84deb9e386f670dd11ce499ded7b40
-  RNPdftron: 7cbe2fc75ef17e1bcb6a91deacb867f93f8a75ef
+  RNPdftron: 3a5d6d27c9315e240b2100a025c8e7a013f58e89
   RNScreens: 218801c16a2782546d30bd2026bb625c0302d70f
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   Yoga: 5ed1699acbba8863755998a4245daa200ff3817b
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
   ZIPFoundation: b1f0de4eed33e74a676f76e12559ab6b75990197
 
-PODFILE CHECKSUM: 0fce292a42b51c19f7b28ad201bcfe30429534d9
+PODFILE CHECKSUM: 263a1c21fd7d0df5d48607d25e6b252d762c2de7
 
 COCOAPODS: 1.11.3
