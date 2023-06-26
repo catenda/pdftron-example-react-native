@@ -1,25 +1,25 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Platform, StyleSheet, View } from 'react-native';
-import { Dirs, FileSystem } from 'react-native-file-access';
-import { Config, DocumentView, RNPdftron } from 'react-native-pdftron';
-import { useIsFocused } from '@react-navigation/native';
+import {LegacyRef, useEffect, useRef, useState} from 'react';
+import {Platform, StyleSheet, View} from 'react-native';
+import {Dirs, FileSystem} from 'react-native-file-access';
+import {Config, DocumentView, RNPdftron} from 'react-native-pdftron';
+import {useIsFocused} from '@react-navigation/native';
 
-const DocumentXODScreen = () => {
+const DocumentPDFScreen = () => {
   const isFocused = useIsFocused();
-  const pdfTronRef = useRef(null);
+  const pdfTronRef = useRef<DocumentView>(null);
   const [isReadyToRender, setIsReadyToRender] = useState(
     Platform.OS !== 'android',
   );
   const [isDocumentLoaded, setIsDocumentLoaded] = useState(false);
 
   useEffect(() => {
-    FileSystem.exists(Dirs.CacheDir + '/test.xod').then((exists) => {
+    FileSystem.exists(Dirs.CacheDir + '/test.pdf').then(exists => {
       if (!exists) {
-        FileSystem.cpAsset('test.xod', Dirs.CacheDir + '/test.xod')
+        FileSystem.cpAsset('test.pdf', Dirs.CacheDir + '/test.pdf')
           .then(() => {
             setIsReadyToRender(true);
           })
-          .catch((error) => {
+          .catch(error => {
             console.log(error);
           });
       } else {
@@ -40,7 +40,7 @@ const DocumentXODScreen = () => {
     }
   }, [isFocused]);
 
-  const onDocumentError = (error) => {
+  const onDocumentError = (error: any) => {
     console.log('Error:', error);
   };
 
@@ -48,8 +48,8 @@ const DocumentXODScreen = () => {
     if (pdfTronRef.current) {
       pdfTronRef.current.setColorPostProcessMode(
         Config.ColorPostProcessMode.None,
-      );
-    }
+        );
+      }
     console.log('Document loaded.');
     setIsDocumentLoaded(true);
   };
@@ -61,7 +61,7 @@ const DocumentXODScreen = () => {
         annotationToolbars={[]} // Hide second top toolbar on Android
         bottomToolbarEnabled={false}
         disabledElements={[Config.Buttons.listsButton]}
-        document={Dirs.CacheDir + '/test.xod'}
+        document={Dirs.CacheDir + '/test.pdf'}
         documentSliderEnabled={false} // Shows native scroll indicator on iOS, nothing on Android
         followSystemDarkMode={false}
         forceAppTheme={Config.ThemeOptions.ThemeDark}
@@ -103,4 +103,4 @@ const Styles = StyleSheet.create({
   },
 });
 
-export default DocumentXODScreen;
+export default DocumentPDFScreen;

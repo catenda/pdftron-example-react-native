@@ -1,23 +1,34 @@
-import React, { useEffect, useState } from 'react';
-import { Platform, StyleSheet, View } from 'react-native';
-import { Config, DocumentView, RNPdftron } from 'react-native-pdftron';
-import { useIsFocused } from '@react-navigation/native';
+import {useEffect, useState} from 'react';
+import {Platform, StyleSheet, View} from 'react-native';
+import {Dirs, FileSystem} from 'react-native-file-access';
+import {Config, DocumentView, RNPdftron} from 'react-native-pdftron';
+import {useIsFocused} from '@react-navigation/native';
 
-const DocumentScreen = () => {
+const DocumentOfficeScreen = () => {
   const isFocused = useIsFocused();
   const [isReadyToRender, setIsReadyToRender] = useState(
     Platform.OS !== 'android',
   );
   const [isDocumentLoaded, setIsDocumentLoaded] = useState(false);
 
-  const path = 'https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf';
-
   useEffect(() => {
-    if (Platform.OS === 'android') {
-      RNPdftron.clearSavedViewerState().then(() => {
-        setIsReadyToRender(true);
-      });
-    }
+    FileSystem.exists(Dirs.CacheDir + '/test.docx').then(exists => {
+      if (!exists) {
+        FileSystem.cpAsset('test.docx', Dirs.CacheDir + '/test.docx')
+          .then(() => {
+            setIsReadyToRender(true);
+          })
+          .catch(error => {
+            console.log(error);
+          });
+      } else {
+        if (Platform.OS === 'android') {
+          RNPdftron.clearSavedViewerState().then(() => {
+            setIsReadyToRender(true);
+          });
+        }
+      }
+    });
   }, []);
 
   useEffect(() => {
@@ -28,7 +39,7 @@ const DocumentScreen = () => {
     }
   }, [isFocused]);
 
-  const onDocumentError = (error) => {
+  const onDocumentError = (error: any) => {
     console.log('Error:', error);
   };
 
@@ -44,7 +55,7 @@ const DocumentScreen = () => {
         annotationToolbars={[]} // Hide second top toolbar on Android
         bottomToolbarEnabled={false}
         disabledElements={[Config.Buttons.listsButton]}
-        document={path}
+        document={Dirs.CacheDir + '/test.docx'}
         documentSliderEnabled={false} // Shows native scroll indicator on iOS, nothing on Android
         followSystemDarkMode={false}
         forceAppTheme={Config.ThemeOptions.ThemeDark}
@@ -85,4 +96,4 @@ const Styles = StyleSheet.create({
   },
 });
 
-export default DocumentScreen;
+export default DocumentOfficeScreen;

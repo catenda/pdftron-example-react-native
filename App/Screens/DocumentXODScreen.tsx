@@ -1,20 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Platform, StyleSheet, View } from 'react-native';
 import { Dirs, FileSystem } from 'react-native-file-access';
 import { Config, DocumentView, RNPdftron } from 'react-native-pdftron';
 import { useIsFocused } from '@react-navigation/native';
 
-const DocumentOfficeScreen = () => {
+const DocumentXODScreen = () => {
   const isFocused = useIsFocused();
+  const pdfTronRef = useRef(null);
   const [isReadyToRender, setIsReadyToRender] = useState(
     Platform.OS !== 'android',
   );
   const [isDocumentLoaded, setIsDocumentLoaded] = useState(false);
 
   useEffect(() => {
-    FileSystem.exists(Dirs.CacheDir + '/test.docx').then((exists) => {
+    FileSystem.exists(Dirs.CacheDir + '/test.xod').then((exists) => {
       if (!exists) {
-        FileSystem.cpAsset('test.docx', Dirs.CacheDir + '/test.docx')
+        FileSystem.cpAsset('test.xod', Dirs.CacheDir + '/test.xod')
           .then(() => {
             setIsReadyToRender(true);
           })
@@ -39,11 +40,16 @@ const DocumentOfficeScreen = () => {
     }
   }, [isFocused]);
 
-  const onDocumentError = (error) => {
+  const onDocumentError = (error: any) => {
     console.log('Error:', error);
   };
 
   const onDocumentLoaded = () => {
+    if (pdfTronRef.current) {
+      pdfTronRef.current.setColorPostProcessMode(
+        Config.ColorPostProcessMode.None,
+      );
+    }
     console.log('Document loaded.');
     setIsDocumentLoaded(true);
   };
@@ -55,7 +61,7 @@ const DocumentOfficeScreen = () => {
         annotationToolbars={[]} // Hide second top toolbar on Android
         bottomToolbarEnabled={false}
         disabledElements={[Config.Buttons.listsButton]}
-        document={Dirs.CacheDir + '/test.docx'}
+        document={Dirs.CacheDir + '/test.xod'}
         documentSliderEnabled={false} // Shows native scroll indicator on iOS, nothing on Android
         followSystemDarkMode={false}
         forceAppTheme={Config.ThemeOptions.ThemeDark}
@@ -69,6 +75,7 @@ const DocumentOfficeScreen = () => {
         longPressMenuEnabled={false}
         pageIndicatorEnabled={Platform.OS !== 'android'}
         readOnly={true} // Disable all editing methods including Apple PencilKit
+        ref={pdfTronRef}
         saveStateEnabled={Platform.OS === 'android'}
         showLeadingNavButton={false}
         showQuickNavigationButton={false}
@@ -96,4 +103,4 @@ const Styles = StyleSheet.create({
   },
 });
 
-export default DocumentOfficeScreen;
+export default DocumentXODScreen;

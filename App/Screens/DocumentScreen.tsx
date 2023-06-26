@@ -1,35 +1,23 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Platform, StyleSheet, View } from 'react-native';
-import { Dirs, FileSystem } from 'react-native-file-access';
 import { Config, DocumentView, RNPdftron } from 'react-native-pdftron';
 import { useIsFocused } from '@react-navigation/native';
 
-const DocumentPDFScreen = () => {
+const DocumentScreen = () => {
   const isFocused = useIsFocused();
-  const pdfTronRef = useRef(null);
   const [isReadyToRender, setIsReadyToRender] = useState(
     Platform.OS !== 'android',
   );
   const [isDocumentLoaded, setIsDocumentLoaded] = useState(false);
 
+  const path = 'https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf';
+
   useEffect(() => {
-    FileSystem.exists(Dirs.CacheDir + '/test.pdf').then((exists) => {
-      if (!exists) {
-        FileSystem.cpAsset('test.pdf', Dirs.CacheDir + '/test.pdf')
-          .then(() => {
-            setIsReadyToRender(true);
-          })
-          .catch((error) => {
-            console.log(error);
-          });
-      } else {
-        if (Platform.OS === 'android') {
-          RNPdftron.clearSavedViewerState().then(() => {
-            setIsReadyToRender(true);
-          });
-        }
-      }
-    });
+    if (Platform.OS === 'android') {
+      RNPdftron.clearSavedViewerState().then(() => {
+        setIsReadyToRender(true);
+      });
+    }
   }, []);
 
   useEffect(() => {
@@ -40,16 +28,11 @@ const DocumentPDFScreen = () => {
     }
   }, [isFocused]);
 
-  const onDocumentError = (error) => {
+  const onDocumentError = (error: any) => {
     console.log('Error:', error);
   };
 
   const onDocumentLoaded = () => {
-    if (pdfTronRef.current) {
-      pdfTronRef.current.setColorPostProcessMode(
-        Config.ColorPostProcessMode.None,
-      );
-    }
     console.log('Document loaded.');
     setIsDocumentLoaded(true);
   };
@@ -61,7 +44,7 @@ const DocumentPDFScreen = () => {
         annotationToolbars={[]} // Hide second top toolbar on Android
         bottomToolbarEnabled={false}
         disabledElements={[Config.Buttons.listsButton]}
-        document={Dirs.CacheDir + '/test.pdf'}
+        document={path}
         documentSliderEnabled={false} // Shows native scroll indicator on iOS, nothing on Android
         followSystemDarkMode={false}
         forceAppTheme={Config.ThemeOptions.ThemeDark}
@@ -75,7 +58,6 @@ const DocumentPDFScreen = () => {
         longPressMenuEnabled={false}
         pageIndicatorEnabled={Platform.OS !== 'android'}
         readOnly={true} // Disable all editing methods including Apple PencilKit
-        ref={pdfTronRef}
         saveStateEnabled={Platform.OS === 'android'}
         showLeadingNavButton={false}
         showQuickNavigationButton={false}
@@ -103,4 +85,4 @@ const Styles = StyleSheet.create({
   },
 });
 
-export default DocumentPDFScreen;
+export default DocumentScreen;
