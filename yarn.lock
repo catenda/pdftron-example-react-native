@@ -5326,9 +5326,9 @@ react-native-gradle-plugin@^0.71.17:
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.17.tgz#cf780a27270f0a32dca8184eff91555d7627dd00"
   integrity sha512-OXXYgpISEqERwjSlaCiaQY6cTY5CH6j73gdkWpK0hedxtiWMWgH+i5TOi4hIGYitm9kQBeyDu+wim9fA8ROFJA==
 
-"react-native-pdftron@github:catenda/pdftron-react-native#catenda-3.0.3-19":
-  version "3.0.3-19"
-  resolved "https://codeload.github.com/catenda/pdftron-react-native/tar.gz/3baad650b5c8342ecc90bc93f0b25bb98d9a2f4a"
+"react-native-pdftron@github:catenda/pdftron-react-native#catenda-3.0.3-23":
+  version "3.0.3-23"
+  resolved "https://codeload.github.com/catenda/pdftron-react-native/tar.gz/be84f05e2f96fae2da2e5f58adb6cffa8c47a326"
   dependencies:
     deprecated-react-native-prop-types "*"
 
