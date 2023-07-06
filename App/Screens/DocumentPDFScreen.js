@@ -45,13 +45,15 @@ const DocumentPDFScreen = () => {
   };
 
   const onDocumentLoaded = () => {
-    if (pdfTronRef.current) {
-      pdfTronRef.current.setColorPostProcessMode(
-        Config.ColorPostProcessMode.None,
+    console.log('Document loaded.');
+    setTimeout(() => {
+      setIsDocumentLoaded(true);
+      if (pdfTronRef.current) {
+        pdfTronRef.current.setColorPostProcessMode(
+          Config.ColorPostProcessMode.None,
         );
       }
-    console.log('Document loaded.');
-    setIsDocumentLoaded(true);
+    }, 3000);
   };
 
   return isReadyToRender ? (
