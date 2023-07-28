@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Platform, StyleSheet, View } from 'react-native';
 import { Dirs, FileSystem } from 'react-native-file-access';
 import { Config, DocumentView, RNPdftron } from 'react-native-pdftron';

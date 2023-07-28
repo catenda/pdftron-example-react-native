@@ -1,8 +1,8 @@
-import {LegacyRef, useEffect, useRef, useState} from 'react';
-import {Platform, StyleSheet, View} from 'react-native';
-import {Dirs, FileSystem} from 'react-native-file-access';
-import {Config, DocumentView, RNPdftron} from 'react-native-pdftron';
-import {useIsFocused} from '@react-navigation/native';
+import React, { useEffect, useRef, useState } from 'react';
+import { Platform, StyleSheet, View } from 'react-native';
+import { Dirs, FileSystem } from 'react-native-file-access';
+import { Config, DocumentView, RNPdftron } from 'react-native-pdftron';
+import { useIsFocused } from '@react-navigation/native';
 
 const DocumentPDFScreen = () => {
   const isFocused = useIsFocused();
@@ -13,13 +13,13 @@ const DocumentPDFScreen = () => {
   const [isDocumentLoaded, setIsDocumentLoaded] = useState(false);
 
   useEffect(() => {
-    FileSystem.exists(Dirs.CacheDir + '/test.pdf').then(exists => {
+    FileSystem.exists(Dirs.CacheDir + '/test.pdf').then((exists) => {
       if (!exists) {
         FileSystem.cpAsset('test.pdf', Dirs.CacheDir + '/test.pdf')
           .then(() => {
             setIsReadyToRender(true);
           })
-          .catch(error => {
+          .catch((error) => {
             console.log(error);
           });
       } else {
@@ -48,8 +48,8 @@ const DocumentPDFScreen = () => {
     if (pdfTronRef.current) {
       pdfTronRef.current.setColorPostProcessMode(
         Config.ColorPostProcessMode.None,
-        );
-      }
+      );
+    }
     console.log('Document loaded.');
     setIsDocumentLoaded(true);
   };

@@ -1,8 +1,8 @@
-import {useEffect, useRef, useState} from 'react';
-import {Platform, StyleSheet, View} from 'react-native';
-import {Dirs, FileSystem} from 'react-native-file-access';
-import {Config, DocumentView, RNPdftron} from 'react-native-pdftron';
-import {useIsFocused} from '@react-navigation/native';
+import React, { useEffect, useRef, useState } from 'react';
+import { Platform, StyleSheet, View } from 'react-native';
+import { Dirs, FileSystem } from 'react-native-file-access';
+import { Config, DocumentView, RNPdftron } from 'react-native-pdftron';
+import { useIsFocused } from '@react-navigation/native';
 
 const TOOLBAR_ID = 'TOOLBAR';
 const TOOLBAR = {
@@ -26,20 +26,20 @@ const TOOLBAR = {
 
 const ImageScreen = () => {
   const isFocused = useIsFocused();
-  const pdfTronRef = useRef(null);
+  const pdfTronRef = useRef<DocumentView>(null);
   const [isReadyToRender, setIsReadyToRender] = useState(
     Platform.OS !== 'android',
   );
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   useEffect(() => {
-    FileSystem.exists(Dirs.CacheDir + '/image.jpg').then(exists => {
+    FileSystem.exists(Dirs.CacheDir + '/image.jpg').then((exists) => {
       if (!exists) {
         FileSystem.cpAsset('image.jpg', Dirs.CacheDir + '/image.jpg')
           .then(() => {
             setIsReadyToRender(true);
           })
-          .catch(error => {
+          .catch((error) => {
             console.log(error);
           });
       } else {
@@ -60,7 +60,7 @@ const ImageScreen = () => {
     }
   }, [isFocused]);
 
-  const onImageError = error => {
+  const onImageError = (error: any) => {
     console.log('Error:', error);
   };
 
@@ -68,8 +68,8 @@ const ImageScreen = () => {
     if (pdfTronRef.current) {
       pdfTronRef.current.setColorPostProcessMode(
         Config.ColorPostProcessMode.None,
-        );
-      }
+      );
+    }
     console.log('Document loaded.');
     setIsImageLoaded(true);
   };

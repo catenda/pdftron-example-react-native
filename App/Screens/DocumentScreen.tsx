@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Platform, StyleSheet, View } from 'react-native';
 import { Config, DocumentView, RNPdftron } from 'react-native-pdftron';
 import { useIsFocused } from '@react-navigation/native';
