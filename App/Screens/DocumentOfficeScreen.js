@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react';
-import {Platform, StyleSheet, View} from 'react-native';
-import {Dirs, FileSystem} from 'react-native-file-access';
-import {Config, DocumentView, RNPdftron} from 'react-native-pdftron';
-import {useIsFocused} from '@react-navigation/native';
+import React, { useEffect, useState } from 'react';
+import { Platform, StyleSheet, View } from 'react-native';
+import { Dirs, FileSystem } from 'react-native-file-access';
+import { Config, DocumentView, RNPdftron } from 'react-native-pdftron';
+import { useIsFocused } from '@react-navigation/native';
 
 const DocumentOfficeScreen = () => {
   const isFocused = useIsFocused();
@@ -12,13 +12,13 @@ const DocumentOfficeScreen = () => {
   const [isDocumentLoaded, setIsDocumentLoaded] = useState(false);
 
   useEffect(() => {
-    FileSystem.exists(Dirs.CacheDir + '/test.docx').then(exists => {
+    FileSystem.exists(Dirs.CacheDir + '/test.docx').then((exists) => {
       if (!exists) {
         FileSystem.cpAsset('test.docx', Dirs.CacheDir + '/test.docx')
           .then(() => {
             setIsReadyToRender(true);
           })
-          .catch(error => {
+          .catch((error) => {
             console.log(error);
           });
       } else {
@@ -39,7 +39,7 @@ const DocumentOfficeScreen = () => {
     }
   }, [isFocused]);
 
-  const onDocumentError = error => {
+  const onDocumentError = (error) => {
     console.log('Error:', error);
   };
 

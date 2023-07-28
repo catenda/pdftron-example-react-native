@@ -1,6 +1,12 @@
 import React from 'react';
-import {Text, View, StyleSheet, Platform, TouchableOpacity} from 'react-native';
-import {RNPdftron} from 'react-native-pdftron';
+import {
+  Text,
+  View,
+  StyleSheet,
+  Platform,
+  TouchableOpacity,
+} from 'react-native';
+import { RNPdftron } from 'react-native-pdftron';
 
 const HomeScreen = () => (
   <View style={Styles.container}>
@@ -12,7 +18,8 @@ const HomeScreen = () => (
             console.log('Cleared saved viewer state');
           });
         }
-      }}>
+      }}
+    >
       <Text>Reset Viewer State</Text>
     </TouchableOpacity>
   </View>

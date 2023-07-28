@@ -1,7 +1,7 @@
-import React, {useEffect, useState} from 'react';
-import {Platform, StyleSheet, View} from 'react-native';
-import {Config, DocumentView, RNPdftron} from 'react-native-pdftron';
-import {useIsFocused} from '@react-navigation/native';
+import React, { useEffect, useState } from 'react';
+import { Platform, StyleSheet, View } from 'react-native';
+import { Config, DocumentView, RNPdftron } from 'react-native-pdftron';
+import { useIsFocused } from '@react-navigation/native';
 
 const DocumentScreen = () => {
   const isFocused = useIsFocused();
@@ -28,7 +28,7 @@ const DocumentScreen = () => {
     }
   }, [isFocused]);
 
-  const onDocumentError = error => {
+  const onDocumentError = (error) => {
     console.log('Error:', error);
   };
 
