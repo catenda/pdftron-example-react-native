@@ -64,3 +64,5 @@ vendor
 
 # testing
 /coverage
+
+/.vscode/

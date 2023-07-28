@@ -1,0 +1,6 @@
+.bundle/
+android/
+ios/
+node_modules/
+
+.eslintrc.js
