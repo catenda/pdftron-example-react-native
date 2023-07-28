@@ -1,7 +1,8 @@
-import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {RNPdftron} from 'react-native-pdftron';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { RNPdftron } from 'react-native-pdftron';
 
 import DocumentScreen from './App/Screens/DocumentScreen';
 import DocumentListScreen from './App/Screens/DocumentListScreen';
@@ -11,7 +12,10 @@ import DocumentXODScreen from './App/Screens/DocumentXODScreen';
 import ImageScreen from './App/Screens/ImageScreen';
 import HomeScreen from './App/Screens/HomeScreen';
 
-import {RootStackParamList, RootTabParamList} from './App/Types/NavigationTypes';
+import {
+  RootStackParamList,
+  RootTabParamList,
+} from './App/Types/NavigationTypes';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 const Tab = createBottomTabNavigator<RootTabParamList>();
