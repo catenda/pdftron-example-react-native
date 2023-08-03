@@ -70,12 +70,12 @@ PODS:
     - FlipperKit/FlipperKitNetworkPlugin
   - fmt (6.2.1)
   - glog (0.3.5)
-  - hermes-engine (0.72.2):
-    - hermes-engine/Pre-built (= 0.72.2)
-  - hermes-engine/Pre-built (0.72.2)
+  - hermes-engine (0.72.3):
+    - hermes-engine/Pre-built (= 0.72.3)
+  - hermes-engine/Pre-built (0.72.3)
   - libevent (2.1.12)
   - OpenSSL-Universal (1.1.1100)
-  - PDFNet (10.2.0.82350)
+  - PDFNet (10.3.0.82544)
   - RCT-Folly (2021.07.22.00):
     - boost
     - DoubleConversion
@@ -491,7 +491,7 @@ PODS:
   - ReactNativeFileAccess (3.0.4):
     - React-Core
     - ZIPFoundation (= 0.9.11)
-  - RNPdftron (3.0.3-23):
+  - RNPdftron (3.0.3-25):
     - PDFNet
     - React-Core
   - RNScreens (3.23.0):
@@ -532,7 +532,7 @@ DEPENDENCIES:
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
   - libevent (~> 2.1.12)
   - OpenSSL-Universal (= 1.1.1100)
-  - PDFNet (from `https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/10.2.0.82350.podspec`)
+  - PDFNet (from `https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/10.3.0.82544.podspec`)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
@@ -606,7 +606,7 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec"
     :tag: hermes-2023-03-20-RNv0.72.0-49794cfc7c81fb8f69fd60c3bbf85a7480cc5a77
   PDFNet:
-    :podspec: https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/10.2.0.82350.podspec
+    :podspec: https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/10.3.0.82544.podspec
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTRequired:
@@ -698,10 +698,10 @@ SPEC CHECKSUMS:
   FlipperKit: 2efad7007d6745a3f95e4034d547be637f89d3f6
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
-  hermes-engine: 3f42310d66bcbc814b3771b79ad8d5a3f8df3df1
+  hermes-engine: 10fbd3f62405c41ea07e71973ea61e1878d07322
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
-  PDFNet: ad9bd6bc13238975b41f7472975c9bfeeefcc416
+  PDFNet: fe7180a776bf286f58748e56ab4d832f7c684b01
   RCT-Folly: 424b8c9a7a0b9ab2886ffe9c3b041ef628fd4fb1
   RCTRequired: a2faf4bad4e438ca37b2040cb8f7799baa065c18
   RCTTypeSafety: cb09f3e4747b6d18331a15eb05271de7441ca0b3
@@ -736,13 +736,13 @@ SPEC CHECKSUMS:
   React-utils: bcb57da67eec2711f8b353f6e3d33bd8e4b2efa3
   ReactCommon: 3ccb8fb14e6b3277e38c73b0ff5e4a1b8db017a9
   ReactNativeFileAccess: 4530e3be4d5069454c6c6389096d8cb78c897f2c
-  RNPdftron: 2a86e1090953994b9d742ac9f6647643aa20fe01
+  RNPdftron: 256874df65f59a4e72c955650c3f507b8192da15
   RNScreens: 6a8a3c6b808aa48dca1780df7b73ea524f602c63
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: 8796b55dba14d7004f980b54bcc9833ee45b28ce
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
   ZIPFoundation: b1f0de4eed33e74a676f76e12559ab6b75990197
 
-PODFILE CHECKSUM: 851553d342bf22c5d09acbe1946f35a3352ca5fa
+PODFILE CHECKSUM: ce9c8ac3ce974faf9bae2f30831030779da8cfdf
 
 COCOAPODS: 1.12.1
