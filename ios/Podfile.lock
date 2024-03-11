@@ -75,7 +75,7 @@ PODS:
   - hermes-engine/Pre-built (0.72.11)
   - libevent (2.1.12)
   - OpenSSL-Universal (1.1.1100)
-  - PDFNet (10.6.0.83126)
+  - PDFNet (10.7.0.83386)
   - RCT-Folly (2021.07.22.00):
     - boost
     - DoubleConversion
@@ -532,7 +532,7 @@ DEPENDENCIES:
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
   - libevent (~> 2.1.12)
   - OpenSSL-Universal (= 1.1.1100)
-  - PDFNet (from `https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/10.6.0.83126.podspec`)
+  - PDFNet (from `https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/10.7.0.83386.podspec`)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
@@ -605,7 +605,7 @@ EXTERNAL SOURCES:
   hermes-engine:
     :podspec: "../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec"
   PDFNet:
-    :podspec: https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/10.6.0.83126.podspec
+    :podspec: https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/10.7.0.83386.podspec
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTRequired:
@@ -700,7 +700,7 @@ SPEC CHECKSUMS:
   hermes-engine: c22b4cc0bb1d1603b9e4faf83732be227baa55bc
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
-  PDFNet: a84629482f089ec703ff9f4d26f7a4f58cf0ec56
+  PDFNet: 94b4f3ad60dcc3325c241d3a72ab0912710a6d7b
   RCT-Folly: 424b8c9a7a0b9ab2886ffe9c3b041ef628fd4fb1
   RCTRequired: 4a524af1769a10608bf423aa8c0804b10f84aec8
   RCTTypeSafety: 419b5760003f83e245fc191b53491b078d41d32e
@@ -742,6 +742,6 @@ SPEC CHECKSUMS:
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
   ZIPFoundation: b1f0de4eed33e74a676f76e12559ab6b75990197
 
-PODFILE CHECKSUM: fd75390ac9be84343d1bf1c2e04ef3abf4fa2b6b
+PODFILE CHECKSUM: c15fbcb8b689454cd6eafaf5a489e966d82dc827
 
 COCOAPODS: 1.14.3
