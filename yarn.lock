@@ -5254,9 +5254,9 @@ react-native-file-access@3.0.6:
   resolved "https://registry.yarnpkg.com/react-native-file-access/-/react-native-file-access-3.0.6.tgz#ace3772e562707f9eaf7c877311a1a9d8c825945"
   integrity sha512-uTG+RIT4I5ce1hGHG6KYuLXqtt2eaINE8+2yz8tlL0yBFI7QpO+nKlU36iObmmpCjKuBMknDhpqWCbQn8ovnfQ==
 
-"react-native-pdftron@github:catenda/pdftron-react-native#catenda-3.0.4-0":
-  version "3.0.4-0"
-  resolved "https://codeload.github.com/catenda/pdftron-react-native/tar.gz/af9466d523aa98157618ef16d4bbd4046bce1097"
+"react-native-pdftron@github:catenda/pdftron-react-native#catenda-3.0.4-2":
+  version "3.0.4-2"
+  resolved "https://codeload.github.com/catenda/pdftron-react-native/tar.gz/40b45feaa9ba8c16887a111f69a8de3a9a82c365"
   dependencies:
     deprecated-react-native-prop-types "*"
 

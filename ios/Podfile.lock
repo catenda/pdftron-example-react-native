@@ -1119,7 +1119,7 @@ PODS:
   - ReactNativeFileAccess (3.0.6):
     - React-Core
     - ZIPFoundation (= 0.9.11)
-  - RNPdftron (3.0.4-0):
+  - RNPdftron (3.0.4-2):
     - PDFNet
     - React-Core
   - RNScreens (3.29.0):
@@ -1402,7 +1402,7 @@ SPEC CHECKSUMS:
   React-utils: d16c1d2251c088ad817996621947d0ac8167b46c
   ReactCommon: 2aa35648354bd4c4665b9a5084a7d37097b89c10
   ReactNativeFileAccess: 519118ae55ab029ad790b3e8071feb555965d48c
-  RNPdftron: 60e92df622f61484f625188b4e5092780fd6fef9
+  RNPdftron: f351c8a2ad56b7de2d7385227c6eed0ecdca609b
   RNScreens: 17e2f657f1b09a71ec3c821368a04acbb7ebcb46
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: 805bf71192903b20fc14babe48080582fee65a80
