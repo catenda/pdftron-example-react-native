@@ -17,6 +17,7 @@
 		16BDE03329D5C1B20086A423 /* test.xod in Resources */ = {isa = PBXBuildFile; fileRef = 16BDE02F29D5C1B20086A423 /* test.xod */; };
 		16BDE03429D5C1B20086A423 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16BDE03029D5C1B20086A423 /* image.jpg */; };
 		16BDE03529D5C1B20086A423 /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 16BDE03129D5C1B20086A423 /* test.pdf */; };
+		16E883412BD9456200B1D652 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 16E883402BD9456200B1D652 /* PrivacyInfo.xcprivacy */; };
 		4A2551C0EC25BBEBE9F975F6 /* libPods-pdftronExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AF8906F8CF68B346BD1FAB /* libPods-pdftronExample.a */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		16BDE02F29D5C1B20086A423 /* test.xod */ = {isa = PBXFileReference; lastKnownFileType = file; name = test.xod; path = ../assets/test.xod; sourceTree = "<group>"; };
 		16BDE03029D5C1B20086A423 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image.jpg; path = ../assets/image.jpg; sourceTree = "<group>"; };
 		16BDE03129D5C1B20086A423 /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = test.pdf; path = ../assets/test.pdf; sourceTree = "<group>"; };
+		16E883402BD9456200B1D652 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		21AF8906F8CF68B346BD1FAB /* libPods-pdftronExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pdftronExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5C02C273BF4671A7042E91 /* Pods-pdftronExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample.debug.xcconfig"; path = "Target Support Files/Pods-pdftronExample/Pods-pdftronExample.debug.xcconfig"; sourceTree = "<group>"; };
 		A3292CC35902F69631B14E14 /* Pods-pdftronExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample.release.xcconfig"; path = "Target Support Files/Pods-pdftronExample/Pods-pdftronExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				166863CD268C9EFB00F39699 /* PTLocalizable.strings */,
 				16A1276E26CC2665009AE86E /* PTAnnotationStyleDefaults.plist */,
 				16B5B805270DA46700E9D302 /* EmptyFile.swift */,
+				16E883402BD9456200B1D652 /* PrivacyInfo.xcprivacy */,
 			);
 			name = pdftronExample;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				16BDE03329D5C1B20086A423 /* test.xod in Resources */,
 				16A1276F26CC2665009AE86E /* PTAnnotationStyleDefaults.plist in Resources */,
 				16BDE03429D5C1B20086A423 /* image.jpg in Resources */,
+				16E883412BD9456200B1D652 /* PrivacyInfo.xcprivacy in Resources */,
 				16BDE03529D5C1B20086A423 /* test.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,7 +213,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
 		3E86297513DC41A6A212EDC7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -260,18 +264,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-pdftronExample/Pods-pdftronExample-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flipper-DoubleConversion/double-conversion.framework/double-conversion",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flipper-Glog/glog.framework/glog",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL-Universal/OpenSSL.framework/OpenSSL",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/PDFNet/PDFNet.framework/PDFNet",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/PDFNet/Tools.framework/Tools",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/double-conversion.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PDFNet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tools.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
@@ -347,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -374,6 +373,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CXX = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
@@ -394,6 +394,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -405,6 +407,7 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
@@ -417,6 +420,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -444,6 +448,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				CXX = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
@@ -460,6 +465,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -470,6 +477,7 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
 				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
