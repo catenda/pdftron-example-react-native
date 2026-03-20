@@ -936,7 +936,7 @@ PODS:
   - React-Mapbuffer (0.74.5):
     - glog
     - React-debug
-  - react-native-safe-area-context (4.10.1):
+  - react-native-safe-area-context (4.10.9):
     - React-Core
   - React-nativeconfig (0.74.5)
   - React-NativeModulesApple (0.74.5):
@@ -1173,7 +1173,7 @@ PODS:
   - RNPdftron (3.0.4-4):
     - PDFNet
     - React-Core
-  - RNScreens (3.31.1):
+  - RNScreens (3.34.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1390,10 +1390,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost: d3f49c53809116a5d38da093a8aa78bf551aed09
-  DoubleConversion: fea03f2699887d960129cc54bba7e52542b6f953
+  DoubleConversion: 76ab83afb40bddeeee456813d9c04f67f78771b5
   FBLazyVector: ac12dc084d1c8ec4cc4d7b3cf1b0ebda6dab85af
   fmt: 4c2741a687cc09f0634a2e2c72a838b99f1ff120
-  glog: c5d68082e772fa1c511173d6b30a9de2c05a69a2
+  glog: fdfdfe5479092de0c4bdbebedd9056951f092c4f
   hermes-engine: 8c1577f3fdb849cbe7729c2e7b5abc4b845e88f8
   PDFNet: dad601545f788f54bec4a70da1cd2bc343c14477
   RCT-Folly: 02617c592a293bd6d418e0a88ff4ee1f88329b47
@@ -1420,7 +1420,7 @@ SPEC CHECKSUMS:
   React-jsitracing: 3b6060bbf5317663667e1dd93560c7943ab86ccc
   React-logger: 257858bd55f3a4e1bc0cf07ddc8fb9faba6f8c7c
   React-Mapbuffer: 6c1cacdbf40b531f549eba249e531a7d0bfd8e7f
-  react-native-safe-area-context: dcab599c527c2d7de2d76507a523d20a0b83823d
+  react-native-safe-area-context: ab8f4a3d8180913bd78ae75dd599c94cce3d5e9a
   React-nativeconfig: ba9a2e54e2f0882cf7882698825052793ed4c851
   React-NativeModulesApple: 8d11ff8955181540585c944cf48e9e7236952697
   React-perflogger: ed4e0c65781521e0424f2e5e40b40cc7879d737e
@@ -1446,7 +1446,7 @@ SPEC CHECKSUMS:
   ReactCommon: f7da14a8827b72704169a48c929bcde802698361
   ReactNativeFileAccess: e3b1a0a36b919d20279947aac31c2e939827c93b
   RNPdftron: 6e722630b9f0349f507ad24e35a42e3873c6d250
-  RNScreens: b32a9ff15bea7fcdbe5dff6477bc503f792b1208
+  RNScreens: aa943ad421c3ced3ef5a47ede02b0cbfc43a012e
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
   Yoga: 950bbfd7e6f04790fdb51149ed51df41f329fcc8
   ZIPFoundation: b1f0de4eed33e74a676f76e12559ab6b75990197
