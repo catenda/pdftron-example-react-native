@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		131DF683CBBA238748E953F9 /* libPods-pdftronExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C28B65BF417FCF9139FC14B0 /* libPods-pdftronExample.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		166863CE268C9EFB00F39699 /* PTLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 166863CD268C9EFB00F39699 /* PTLocalizable.strings */; };
 		16A1276F26CC2665009AE86E /* PTAnnotationStyleDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 16A1276E26CC2665009AE86E /* PTAnnotationStyleDefaults.plist */; };
@@ -16,7 +17,6 @@
 		16BDE03429D5C1B20086A423 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16BDE03029D5C1B20086A423 /* image.jpg */; };
 		16BDE03529D5C1B20086A423 /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 16BDE03129D5C1B20086A423 /* test.pdf */; };
 		16E883412BD9456200B1D652 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 16E883402BD9456200B1D652 /* PrivacyInfo.xcprivacy */; };
-		4A2551C0EC25BBEBE9F975F6 /* libPods-pdftronExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21AF8906F8CF68B346BD1FAB /* libPods-pdftronExample.a */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,10 +33,10 @@
 		16BDE03029D5C1B20086A423 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image.jpg; path = ../assets/image.jpg; sourceTree = "<group>"; };
 		16BDE03129D5C1B20086A423 /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = test.pdf; path = ../assets/test.pdf; sourceTree = "<group>"; };
 		16E883402BD9456200B1D652 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		21AF8906F8CF68B346BD1FAB /* libPods-pdftronExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pdftronExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D5C02C273BF4671A7042E91 /* Pods-pdftronExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample.debug.xcconfig"; path = "Target Support Files/Pods-pdftronExample/Pods-pdftronExample.debug.xcconfig"; sourceTree = "<group>"; };
+		24142FAEE7DD68BF50368429 /* Pods-pdftronExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample.release.xcconfig"; path = "Target Support Files/Pods-pdftronExample/Pods-pdftronExample.release.xcconfig"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = pdftronExample/AppDelegate.swift; sourceTree = "<group>"; };
-		A3292CC35902F69631B14E14 /* Pods-pdftronExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample.release.xcconfig"; path = "Target Support Files/Pods-pdftronExample/Pods-pdftronExample.release.xcconfig"; sourceTree = "<group>"; };
+		B239B1ED3B27991A7AADDAC0 /* Pods-pdftronExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExample.debug.xcconfig"; path = "Target Support Files/Pods-pdftronExample/Pods-pdftronExample.debug.xcconfig"; sourceTree = "<group>"; };
+		C28B65BF417FCF9139FC14B0 /* libPods-pdftronExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pdftronExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A2551C0EC25BBEBE9F975F6 /* libPods-pdftronExample.a in Frameworks */,
+				131DF683CBBA238748E953F9 /* libPods-pdftronExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				21AF8906F8CF68B346BD1FAB /* libPods-pdftronExample.a */,
+				C28B65BF417FCF9139FC14B0 /* libPods-pdftronExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -85,8 +85,8 @@
 		8082433E3A146197F12AFBAF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4D5C02C273BF4671A7042E91 /* Pods-pdftronExample.debug.xcconfig */,
-				A3292CC35902F69631B14E14 /* Pods-pdftronExample.release.xcconfig */,
+				B239B1ED3B27991A7AADDAC0 /* Pods-pdftronExample.debug.xcconfig */,
+				24142FAEE7DD68BF50368429 /* Pods-pdftronExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -127,13 +127,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "pdftronExample" */;
 			buildPhases = (
-				3E86297513DC41A6A212EDC7 /* [CP] Check Pods Manifest.lock */,
+				52981D5D0142DE35947CDEB1 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				98F0478460520456FE29B360 /* [CP] Embed Pods Frameworks */,
-				8839533107F7464AABFC2DC8 /* [CP] Copy Pods Resources */,
+				9C2FD4ED902DC009EDBEA882 /* [CP] Embed Pods Frameworks */,
+				D268D700C14BDB717247CBF0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,7 +210,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		3E86297513DC41A6A212EDC7 /* [CP] Check Pods Manifest.lock */ = {
+		52981D5D0142DE35947CDEB1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,7 +232,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8839533107F7464AABFC2DC8 /* [CP] Copy Pods Resources */ = {
+		9C2FD4ED902DC009EDBEA882 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pdftronExample/Pods-pdftronExample-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/PDFNet/PDFNet.framework/PDFNet",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/PDFNet/Tools.framework/Tools",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PDFNet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tools.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pdftronExample/Pods-pdftronExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D268D700C14BDB717247CBF0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -262,28 +284,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pdftronExample/Pods-pdftronExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		98F0478460520456FE29B360 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-pdftronExample/Pods-pdftronExample-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/PDFNet/PDFNet.framework/PDFNet",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/PDFNet/Tools.framework/Tools",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PDFNet.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tools.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pdftronExample/Pods-pdftronExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -301,7 +301,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D5C02C273BF4671A7042E91 /* Pods-pdftronExample.debug.xcconfig */;
+			baseConfigurationReference = B239B1ED3B27991A7AADDAC0 /* Pods-pdftronExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -326,7 +326,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3292CC35902F69631B14E14 /* Pods-pdftronExample.release.xcconfig */;
+			baseConfigurationReference = 24142FAEE7DD68BF50368429 /* Pods-pdftronExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
