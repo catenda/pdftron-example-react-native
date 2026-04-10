@@ -74,4 +74,8 @@ vendor
 !.yarn/sdks
 !.yarn/versions
 
+# Other tooling
+**.claude/
+
+# Visual Studio Code
 /.vscode/
