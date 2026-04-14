@@ -8,7 +8,7 @@ PODS:
   - hermes-engine (0.81.5):
     - hermes-engine/Pre-built (= 0.81.5)
   - hermes-engine/Pre-built (0.81.5)
-  - PDFNet (10.11.0.84197)
+  - PDFNet (11.10.0.86566)
   - RCT-Folly (2024.11.18.00):
     - boost
     - DoubleConversion
@@ -2370,7 +2370,7 @@ PODS:
     - SocketRocket
     - Yoga
     - ZIPFoundation
-  - RNPdftron (3.0.4-4):
+  - RNPdftron (3.0.4-26):
     - PDFNet
     - React-Core
   - RNScreens (4.24.0):
@@ -2444,7 +2444,7 @@ DEPENDENCIES:
   - fmt (from `../node_modules/react-native/third-party-podspecs/fmt.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
-  - PDFNet (from `https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/10.11.0.84197.podspec`)
+  - PDFNet (from `https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/11.10.0.86566.podspec`)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTDeprecation (from `../node_modules/react-native/ReactApple/Libraries/RCTFoundation/RCTDeprecation`)
   - RCTRequired (from `../node_modules/react-native/Libraries/Required`)
@@ -2538,7 +2538,7 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec"
     :tag: hermes-2025-07-07-RNv0.81.0-e0fc67142ec0763c6b6153ca2bf96df815539782
   PDFNet:
-    :podspec: https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/10.11.0.84197.podspec
+    :podspec: https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/11.10.0.86566.podspec
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTDeprecation:
@@ -2684,7 +2684,7 @@ SPEC CHECKSUMS:
   fmt: a40bb5bd0294ea969aaaba240a927bd33d878cdd
   glog: 5683914934d5b6e4240e497e0f4a3b42d1854183
   hermes-engine: 9f4dfe93326146a1c99eb535b1cb0b857a3cd172
-  PDFNet: dad601545f788f54bec4a70da1cd2bc343c14477
+  PDFNet: e19b01d7691686502343f06c8840ac4319c9e407
   RCT-Folly: 59ec0ac1f2f39672a0c6e6cecdd39383b764646f
   RCTDeprecation: 5eb1d2eeff5fb91151e8a8eef45b6c7658b6c897
   RCTRequired: cebcf9442fc296c9b89ac791dfd463021d9f6f23
@@ -2750,12 +2750,12 @@ SPEC CHECKSUMS:
   ReactCodegen: 0936e9ff5fd359d5f6b5173c2a90e91b446d33a3
   ReactCommon: 8df6e27c060970b9fb77a86e69a1cf9b934ea458
   ReactNativeFileAccess: 9e3898f43d5dc05d0a120f6e15df9f26d1018c56
-  RNPdftron: 6e722630b9f0349f507ad24e35a42e3873c6d250
+  RNPdftron: 180fb94493030c2385efa3ba5663cb61e4bdb0c6
   RNScreens: 7179cc1ba31b4e18ed29f10abf20c24a7961cf4c
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
   Yoga: 728df40394d49f3f471688747cf558158b3a3bd1
   ZIPFoundation: dfd3d681c4053ff7e2f7350bc4e53b5dba3f5351
 
-PODFILE CHECKSUM: edb07195c902116adf0787d71db0b7f9bd07cb3a
+PODFILE CHECKSUM: 835c612bebc7f6bebe14ab5360e257e359777056
 
 COCOAPODS: 1.14.3
