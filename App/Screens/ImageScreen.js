@@ -84,8 +84,6 @@ const ImageScreen = () => {
         disabledElements={[Config.Buttons.editMenuButton]}
         document={Dirs.CacheDir + '/image.jpg'}
         documentSliderEnabled={false} // Shows native scroll indicator on iOS, nothing on Android
-        followSystemDarkMode={false}
-        forceAppTheme={Config.ThemeOptions.ThemeDark}
         hideScrollbars={true}
         hideToolbarsOnTap={false}
         hideTopAppNavBar={true}
