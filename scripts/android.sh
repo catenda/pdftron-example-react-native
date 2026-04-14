@@ -20,4 +20,4 @@ if command -v adb &> /dev/null; then
   done
 fi
 
-yarn react-native run-android --active-arch-only "$@"
+npx react-native run-android --active-arch-only "$@"

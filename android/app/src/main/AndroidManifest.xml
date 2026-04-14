@@ -11,7 +11,8 @@
       android:allowBackup="false"
       android:theme="@style/AppTheme"
       android:largeHeap="true"
-      android:usesCleartextTraffic="true">
+      android:usesCleartextTraffic="${usesCleartextTraffic}"
+      android:supportsRtl="true">
 
       <meta-data
         android:name="pdftron_license_key"
