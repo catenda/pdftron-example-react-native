@@ -3,7 +3,7 @@ PODS:
   - hermes-engine (250829098.0.9):
     - hermes-engine/Pre-built (= 250829098.0.9)
   - hermes-engine/Pre-built (250829098.0.9)
-  - PDFNet (11.12.0.86890)
+  - PDFNet (12.1.0.30566)
   - RCTDeprecation (0.84.1)
   - RCTRequired (0.84.1)
   - RCTSwiftUI (0.84.1)
@@ -1934,7 +1934,7 @@ PODS:
 DEPENDENCIES:
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
-  - PDFNet (from `https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/11.12.0.86890.podspec`)
+  - PDFNet (from `https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/12.1.0.30566.podspec`)
   - RCTDeprecation (from `../node_modules/react-native/ReactApple/Libraries/RCTFoundation/RCTDeprecation`)
   - RCTRequired (from `../node_modules/react-native/Libraries/Required`)
   - RCTSwiftUI (from `../node_modules/react-native/ReactApple/RCTSwiftUI`)
@@ -2023,7 +2023,7 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec"
     :tag: hermes-v250829098.0.9
   PDFNet:
-    :podspec: https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/11.12.0.86890.podspec
+    :podspec: https://pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/12.1.0.30566.podspec
   RCTDeprecation:
     :path: "../node_modules/react-native/ReactApple/Libraries/RCTFoundation/RCTDeprecation"
   RCTRequired:
@@ -2177,8 +2177,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBLazyVector: e97c19a5a442429d1988f182a1940fb08df514da
-  hermes-engine: 1f1f79f903bd9f1c9b6b5f661093742676836c55
-  PDFNet: d626f2a44cc8dcb02a82da9719b4b207a2dbd54f
+  hermes-engine: 9b7493258314820b91243732abfc0f98674b6b1c
+  PDFNet: 5b845a2508e8eb4d914d1fede4440bd8f212fd57
   RCTDeprecation: af44b104091a34482596cd9bd7e8d90c4e9b4bd7
   RCTRequired: bb77b070f75f53398ce43c0aaaa58337cebe2bf6
   RCTSwiftUI: afc0a0a635860da1040a0b894bfd529da06d7810
@@ -2187,7 +2187,7 @@ SPEC CHECKSUMS:
   React: 1ba7d364ade7d883a1ec055bfc3606f35fdee17b
   React-callinvoker: bc2a26f8d84fb01f003fc6de6c9337b64715f95b
   React-Core: 7840d3a80b43a95c5e80ef75146bd70925ebab0f
-  React-Core-prebuilt: c76c3f500bf32ad464f8713d4272845d2077616e
+  React-Core-prebuilt: 06b95a3d5b4a9faf2c8291599ccee9c988fbb75b
   React-CoreModules: 2eb010400b63b89e53a324ffb3c112e4c7c3ce42
   React-cxxreact: a558e92199d26f145afa9e62c4233cf8e7950efe
   React-debug: 755200a6e7f5e6e0a40ff8d215493d43cce285fc
@@ -2249,13 +2249,13 @@ SPEC CHECKSUMS:
   ReactAppDependencyProvider: e96e93b493d8d86eeaee3e590ba0be53f6abe46f
   ReactCodegen: 797de5178718324c6eba3327b07f9a423fbd5787
   ReactCommon: 07572bf9e687c8a52fbe4a3641e9e3a1a477c78e
-  ReactNativeDependencies: 6f3f61f194fe2ac9475986d58817dc9858e0d5df
+  ReactNativeDependencies: eaf00cf7d8843707a686a6c13827887f37f93622
   ReactNativeFileAccess: 68e853aa20c0d274aa581f50854d130f55fee767
   RNPdftron: 2d38205e687f851e0b6960fc60535bf6cf4b7e9f
   RNScreens: 4d43bcfdf8817289ee1950ad8c218148fafc8ce1
   Yoga: c0b3f2c7e8d3e327e450223a2414ca3fa296b9a2
   ZIPFoundation: dfd3d681c4053ff7e2f7350bc4e53b5dba3f5351
 
-PODFILE CHECKSUM: a1bcf32309d8774919493f0d3de6639a63780eb4
+PODFILE CHECKSUM: db59df7a63a600f4404cf2e880dbd52ef505a023
 
 COCOAPODS: 1.15.2
